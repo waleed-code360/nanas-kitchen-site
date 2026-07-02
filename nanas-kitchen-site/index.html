@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="NANA'S KITCHEN Valencia Town Lahore - burgers, wraps, sandwiches, fries, pizzas, signature pizzas and best deals." />
+    <title>NANA'S KITCHEN | Order Now</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#home" aria-label="NANA'S KITCHEN home">
+        <span class="brand-mark">N</span>
+        <span>NANA'S KITCHEN</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <i data-lucide="menu"></i>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#deals">Deals</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1800&q=85">
+          <source src="assets/videos/hero-food.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-shade"></div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Valencia Town Lahore • 4:30 PM - 3:00 AM</p>
+            <h1>Fresh fast food, hot deals, late-night delivery.</h1>
+            <p class="hero-text">
+              Burgers, wraps, sandwiches, fries, pizzas, signature pizzas and value deals from NANA'S KITCHEN.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#menu">
+                <i class="fa-solid fa-utensils"></i>
+                Explore Menu
+              </a>
+              <a class="btn whatsapp" id="heroWhatsApp" target="_blank" rel="noreferrer">
+                <i class="fa-brands fa-whatsapp"></i>
+                Order on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="NANA'S KITCHEN quick information">
+            <span class="hero-card-label">NANA'S KITCHEN</span>
+            <h2>Order Now</h2>
+            <div class="quick-list">
+              <span><i data-lucide="clock"></i> 4:30 PM - 3:00 AM</span>
+              <span><i data-lucide="phone"></i> 0321-6311367</span>
+              <span><i data-lucide="phone"></i> 0323-4407289</span>
+              <span><i data-lucide="map-pin"></i> K-1 Block Marhaba Mall</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section" id="menu">
+        <div class="section-head">
+          <p class="script-kicker">Choose what you want</p>
+          <h2>Full Menu</h2>
+          <p>Use the sticky category bar. As you scroll, the active category changes automatically.</p>
+        </div>
+
+        <div class="menu-sticky-wrap">
+          <div class="deal-strip" id="dealStrip" aria-label="Best deals quick strip"></div>
+          <div class="menu-tabs" id="menuTabs" aria-label="Menu categories"></div>
+        </div>
+
+        <div class="menu-sections" id="menuGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="order-steps" id="order">
+        <div class="section-head compact">
+          <p class="script-kicker">Simple ordering</p>
+          <h2>How to Order</h2>
+        </div>
+        <div class="steps-grid">
+          <article>
+            <i data-lucide="mouse-pointer-click"></i>
+            <h3>Select Items</h3>
+            <p>Pick your burgers, pizzas, wraps, sides or deals.</p>
+          </article>
+          <article>
+            <i data-lucide="shopping-cart"></i>
+            <h3>Add to Cart</h3>
+            <p>Add normal items or select S / M / L for pizzas.</p>
+          </article>
+          <article>
+            <i class="fa-brands fa-whatsapp"></i>
+            <h3>Send on WhatsApp</h3>
+            <p>Your full order is prepared in one WhatsApp message.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="location-section" id="location">
+        <div class="location-copy">
+          <p class="script-kicker">Find us</p>
+          <h2>Shop no9, Ground Floor, K-1 Block Marhaba Mall</h2>
+          <p>Valencia Town Lahore</p>
+          <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Shop%20no9%2C%20Ground%20Floor%2C%20K-1%20Block%20Marhaba%20Mall%2C%20Valencia%20Town%20Lahore" target="_blank" rel="noreferrer">
+            <i data-lucide="map-pin"></i>
+            Get Directions
+          </a>
+        </div>
+        <div class="map-frame">
+          <iframe title="NANA'S KITCHEN location map" src="https://www.google.com/maps?q=Shop%20no9%2C%20Ground%20Floor%2C%20K-1%20Block%20Marhaba%20Mall%2C%20Valencia%20Town%20Lahore&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <aside class="floating-deals" id="floatingDeals" aria-label="Floating best deals"></aside>
+
+    <aside class="cart-panel" id="cartPanel" aria-label="Order cart">
+      <button class="cart-toggle" id="cartToggle" aria-label="Open order cart">
+        <i data-lucide="shopping-cart"></i>
+        <span id="cartCount">0</span>
+      </button>
+      <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-head">
+          <h2>Your Order</h2>
+          <button id="cartClose" aria-label="Close cart">
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">PKR 0</strong>
+        </div>
+        <button class="btn whatsapp full" id="sendOrder">
+          <i class="fa-brands fa-whatsapp"></i>
+          Send Order on WhatsApp
+        </button>
+      </div>
+    </aside>
+
+    <footer class="site-footer" id="contact">
+      <div>
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark">N</span>
+          <span>NANA'S KITCHEN</span>
+        </a>
+        <p>Burgers, wraps, sandwiches, fries, pizzas, specials and best deals in Valencia Town Lahore.</p>
+      </div>
+      <div class="footer-list">
+        <h2>Contact</h2>
+        <a id="footerWhatsApp" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 0321-6311367</a>
+        <a href="tel:03216311367"><i data-lucide="phone"></i> Call: 0321-6311367</a>
+        <a href="tel:03234407289"><i data-lucide="phone"></i> Call: 0323-4407289</a>
+      </div>
+      <div class="footer-list">
+        <h2>Timing & Address</h2>
+        <span><i data-lucide="clock"></i> 4:30 PM - 3:00 AM</span>
+        <span><i data-lucide="map-pin"></i> Shop no9, Ground Floor, K-1 Block Marhaba Mall, Valencia Town Lahore</span>
+      </div>
+    </footer>
+
+    <div class="floating-actions" aria-label="Quick contact">
+      <a class="float-call" href="tel:03216311367" aria-label="Call NANA'S KITCHEN"><i data-lucide="phone"></i></a>
+      <a class="float-whatsapp" id="floatingWhatsApp" target="_blank" rel="noreferrer" aria-label="WhatsApp NANA'S KITCHEN"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
