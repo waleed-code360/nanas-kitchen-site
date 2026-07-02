@@ -36,7 +36,7 @@
 
     <main>
       <section class="hero" id="home">
-        <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1800&q=85">
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1800&q=85">
           <source src="assets/videos/hero-food.mp4" type="video/mp4" />
         </video>
         <div class="hero-shade"></div>
@@ -148,6 +148,12 @@
           <span>Total</span>
           <strong id="cartTotal">PKR 0</strong>
         </div>
+
+        <div class="customer-field">
+          <label for="customerAddress">Delivery address</label>
+          <textarea id="customerAddress" rows="3" placeholder="Type customer's delivery address here"></textarea>
+        </div>
+
         <button class="btn whatsapp full" id="sendOrder">
           <i class="fa-brands fa-whatsapp"></i>
           Send Order on WhatsApp

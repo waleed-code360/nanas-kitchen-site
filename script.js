@@ -26,6 +26,7 @@ const cartPanel = document.querySelector("#cartPanel");
 const cartItems = document.querySelector("#cartItems");
 const cartCount = document.querySelector("#cartCount");
 const cartTotal = document.querySelector("#cartTotal");
+const customerAddressInput = document.querySelector("#customerAddress");
 
 function renderIcons() {
   if (window.lucide) lucide.createIcons();
@@ -109,7 +110,7 @@ function priceMarkup(item) {
 }
 
 function orderLink(item) {
-  return whatsappLink(`Hi, I'd like to order ${item.name} - ${priceText(item)}`);
+  return whatsappLink(`Hi, I'd like to order ${item.name} - ${priceText(item)}\nCustomer address:`);
 }
 
 function actionMarkup(item) {
@@ -142,7 +143,7 @@ function cardMarkup(item) {
   return `
     <article class="menu-card">
       <div class="menu-img">
-        <img src="${item.image}" alt="${item.name}" loading="lazy" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80';" />
+        <img src="${item.image}" data-fallback="${item.fallbackImage || item.image}" alt="${item.name}" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback;" />
         ${item.badge ? `<span class="badge">${item.badge}</span>` : ""}
       </div>
       <div class="menu-body">
@@ -323,6 +324,14 @@ function sendCartOrder() {
     return;
   }
 
+  const customerAddress = customerAddressInput?.value.trim() || "";
+
+  if (!customerAddress) {
+    alert("Please enter the customer's delivery address.");
+    customerAddressInput?.focus();
+    return;
+  }
+
   const lines = cart.map((line) => `- ${line.quantity} x ${line.name} (${formatPKR(line.price * line.quantity)})`);
   const message = [
     orderBaseMessage,
@@ -330,9 +339,8 @@ function sendCartOrder() {
     "Order:",
     ...lines,
     "",
-    `Total: ${formatPKR(cartAmount())}`,
-    `Address: ${RESTAURANT.location}`,
-    `Timing: ${RESTAURANT.openingHours}`
+    `Customer address: ${customerAddress}`,
+    `Total: ${formatPKR(cartAmount())}`
   ].join("\n");
 
   window.open(whatsappLink(message), "_blank", "noopener,noreferrer");
@@ -378,6 +386,21 @@ document.querySelector("#cartToggle").addEventListener("click", () => cartPanel.
 document.querySelector("#cartClose").addEventListener("click", () => cartPanel.classList.remove("open"));
 document.querySelector("#sendOrder").addEventListener("click", sendCartOrder);
 
+function initHeroVideo() {
+  const video = document.querySelector(".hero-video");
+  if (!video) return;
+
+  video.muted = true;
+  video.playsInline = true;
+
+  const playPromise = video.play();
+  if (playPromise?.catch) {
+    playPromise.catch(() => {
+      document.body.classList.add("hero-video-paused");
+    });
+  }
+}
+
 setContactLinks();
 renderTabs();
 renderDealStrip();
@@ -386,3 +409,4 @@ renderMenu();
 renderCart();
 renderIcons();
 initNavigation();
+initHeroVideo();
