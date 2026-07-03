@@ -2459,3 +2459,306 @@ body.modal-open {
     font-size: 0.92rem !important;
   }
 }
+
+/* =========================================================
+   V7: Remove hero info card + stronger mobile responsive fixes
+   Only overrides layout; menu/data/cart behavior unchanged.
+========================================================= */
+.hero-card,
+.quick-list,
+.hero-card-label {
+  display: none !important;
+}
+
+.hero {
+  min-height: 72vh !important;
+  padding-top: 122px !important;
+  padding-bottom: 68px !important;
+}
+
+.hero-inner {
+  grid-template-columns: minmax(0, 1fr) !important;
+  max-width: 1180px !important;
+}
+
+.hero-copy {
+  max-width: 720px !important;
+}
+
+.hero h1 {
+  max-width: 720px !important;
+  font-size: clamp(2.6rem, 4.7vw, 4.65rem) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.045em !important;
+}
+
+.hero .hero-text {
+  max-width: 620px !important;
+}
+
+/* Keep footer/contact details at the end and readable */
+.site-footer {
+  overflow: hidden !important;
+}
+
+.footer-list span,
+.footer-list a {
+  word-break: normal !important;
+  overflow-wrap: anywhere !important;
+  line-height: 1.45 !important;
+}
+
+@media (max-width: 760px) {
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .site-header {
+    top: 10px !important;
+    width: calc(100% - 18px) !important;
+    min-height: 56px !important;
+    border-radius: 20px !important;
+    padding: 8px 10px !important;
+  }
+
+  .brand {
+    gap: 8px !important;
+    min-width: 0 !important;
+  }
+
+  .brand span:last-child {
+    max-width: 185px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    font-size: 0.9rem !important;
+  }
+
+  .nav-toggle {
+    display: grid !important;
+    width: 40px !important;
+    height: 40px !important;
+    flex: 0 0 auto !important;
+  }
+
+  .hero {
+    min-height: 82vh !important;
+    padding: 108px 16px 42px !important;
+    display: flex !important;
+    align-items: flex-end !important;
+  }
+
+  .hero-video {
+    object-position: center !important;
+    filter: brightness(1.28) saturate(1.16) contrast(1.02) !important;
+  }
+
+  .hero-shade {
+    background:
+      linear-gradient(180deg, rgba(14, 8, 5, 0.38) 0%, rgba(14, 8, 5, 0.42) 38%, rgba(14, 8, 5, 0.82) 100%),
+      linear-gradient(90deg, rgba(14, 8, 5, 0.62), rgba(14, 8, 5, 0.28)) !important;
+  }
+
+  .hero-inner {
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .hero-copy {
+    max-width: 100% !important;
+  }
+
+  .eyebrow {
+    margin-bottom: 10px !important;
+    font-size: 1.02rem !important;
+  }
+
+  .hero h1 {
+    max-width: 360px !important;
+    font-size: clamp(2.15rem, 10vw, 3.15rem) !important;
+    line-height: 1.03 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .hero .hero-text {
+    max-width: 350px !important;
+    margin-bottom: 18px !important;
+    font-size: 0.92rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+    max-width: 350px !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    min-height: 44px !important;
+    font-size: 0.9rem !important;
+    padding: 11px 14px !important;
+  }
+
+  .menu-section {
+    padding-top: 22px !important;
+  }
+
+  .menu-sticky-wrap {
+    top: 0 !important;
+    padding: 8px 10px !important;
+  }
+
+  .deal-strip {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .deal-strip::-webkit-scrollbar,
+  .menu-tabs::-webkit-scrollbar,
+  .category-grid::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .menu-tabs {
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    white-space: nowrap !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .menu-category-section {
+    padding: 26px 12px 12px !important;
+  }
+
+  .category-title-row {
+    margin-bottom: 12px !important;
+  }
+
+  .category-title-row h2 {
+    font-size: clamp(1.8rem, 8vw, 2.35rem) !important;
+  }
+
+  .category-grid {
+    gap: 10px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding-bottom: 12px !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .menu-card {
+    flex: 0 0 76vw !important;
+    width: 76vw !important;
+    max-width: 280px !important;
+    min-width: 230px !important;
+    scroll-snap-align: start !important;
+  }
+
+  .menu-img {
+    height: 132px !important;
+  }
+
+  .menu-body {
+    min-height: auto !important;
+    padding: 12px !important;
+  }
+
+  .menu-body h3 {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+  }
+
+  .menu-body p,
+  .menu-points {
+    font-size: 0.84rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .menu-price {
+    font-size: 1rem !important;
+  }
+
+  .menu-actions {
+    gap: 8px !important;
+    margin-top: 10px !important;
+  }
+
+  .menu-actions .btn {
+    min-height: 38px !important;
+    font-size: 0.82rem !important;
+  }
+
+  .site-footer {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+    padding: 48px 18px 120px !important;
+  }
+
+  .site-footer p {
+    font-size: 0.98rem !important;
+    max-width: 100% !important;
+  }
+
+  .footer-list h2 {
+    font-size: 1.25rem !important;
+  }
+
+  .footer-list span,
+  .footer-list a {
+    font-size: 0.94rem !important;
+    align-items: flex-start !important;
+  }
+
+  .floating-actions {
+    right: 12px !important;
+    bottom: 14px !important;
+    gap: 10px !important;
+  }
+
+  .floating-actions a {
+    width: 54px !important;
+    height: 54px !important;
+  }
+
+  .cart-toggle {
+    right: 12px !important;
+    bottom: 82px !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .cart-drawer {
+    width: calc(100vw - 16px) !important;
+    right: 8px !important;
+    bottom: 8px !important;
+    border-radius: 22px !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .brand span:last-child {
+    max-width: 150px !important;
+  }
+
+  .hero h1 {
+    font-size: 2rem !important;
+    max-width: 320px !important;
+  }
+
+  .hero .hero-text,
+  .hero-actions {
+    max-width: 320px !important;
+  }
+
+  .menu-card {
+    flex-basis: 78vw !important;
+    width: 78vw !important;
+    min-width: 220px !important;
+  }
+}
