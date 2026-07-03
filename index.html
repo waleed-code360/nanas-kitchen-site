@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css?v=6" />
   </head>
 
   <body>
@@ -37,16 +37,16 @@
     <main>
       <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1800&q=85">
-          <source src="assets/videos/hero-food.mp4" type="video/mp4" />
+          <source src="assets/videos/hero-food.mp4?v=6" type="video/mp4" />
         </video>
         <div class="hero-shade"></div>
 
         <div class="hero-inner">
           <div class="hero-copy">
-            <p class="eyebrow">Valencia Town Lahore • 4:30 PM - 3:00 AM</p>
-            <h1>Fresh fast food, hot deals, late-night delivery.</h1>
+            <p class="eyebrow">NANA'S KITCHEN • Fresh Fast Food</p>
+            <h1>Order burgers, pizzas, wraps & deals.</h1>
             <p class="hero-text">
-              Burgers, wraps, sandwiches, fries, pizzas, signature pizzas and value deals from NANA'S KITCHEN.
+              Fresh burgers, wraps, sandwiches, fries, pizzas and value deals — simple menu, quick ordering, and home delivery.
             </p>
 
             <div class="hero-actions">
@@ -65,7 +65,7 @@
             <span class="hero-card-label">NANA'S KITCHEN</span>
             <h2>Order Now</h2>
             <div class="quick-list">
-              <span><i data-lucide="clock"></i> 4:30 PM - 3:00 AM</span>
+              <span><i data-lucide="clock"></i> 1:00 PM - 3:00 AM</span>
               <span><i data-lucide="phone"></i> 0321-6311367</span>
               <span><i data-lucide="phone"></i> 0323-4407289</span>
               <span><i data-lucide="map-pin"></i> K-1 Block Marhaba Mall</span>
@@ -161,6 +161,17 @@
       </div>
     </aside>
 
+
+    <div class="item-modal" id="itemModal" hidden aria-hidden="true">
+      <div class="item-modal-backdrop" data-close-modal></div>
+      <div class="item-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalItemName">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close item details">
+          <i data-lucide="x"></i>
+        </button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
     <footer class="site-footer" id="contact">
       <div>
         <a class="brand footer-brand" href="#home">
@@ -177,7 +188,7 @@
       </div>
       <div class="footer-list">
         <h2>Timing & Address</h2>
-        <span><i data-lucide="clock"></i> 4:30 PM - 3:00 AM</span>
+        <span><i data-lucide="clock"></i> 1:00 PM - 3:00 AM</span>
         <span><i data-lucide="map-pin"></i> Shop no9, Ground Floor, K-1 Block Marhaba Mall, Valencia Town Lahore</span>
       </div>
     </footer>
@@ -187,7 +198,7 @@
       <a class="float-whatsapp" id="floatingWhatsApp" target="_blank" rel="noreferrer" aria-label="WhatsApp NANA'S KITCHEN"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
 
-    <script src="menu.js"></script>
-    <script src="script.js"></script>
+    <script src="menu.js?v=6"></script>
+    <script src="script.js?v=6"></script>
   </body>
 </html>

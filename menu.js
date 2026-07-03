@@ -4,7 +4,7 @@ const RESTAURANT = {
   location: "Shop no9, Ground Floor, K-1 Block Marhaba Mall, Valencia Town Lahore",
   whatsappNumber: "923216311367",
   phoneNumbers: ["0321-6311367", "0323-4407289"],
-  openingHours: "4:30 PM - 3:00 AM"
+  openingHours: "1:00 PM - 3:00 AM"
 };
 
 const MENU_ITEMS = [
@@ -728,7 +728,7 @@ const MENU_ITEMS = [
     price: 1650,
     badge: "Deal",
     image: "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=80",
-    description: ["5 Pc Wings", "1 Zinger Burger", "1 Small Pizza", "1 Coke 500ml"]
+    description: ["5 Pc Wings", "1 Zinger Burger", "1 Small Pizza", "1 Coke (500ml)"]
   },
   {
     id: "deal-12",
@@ -859,4 +859,75 @@ const FIXED_ITEM_IMAGES = {
 MENU_ITEMS.forEach((item) => {
   item.fallbackImage = CATEGORY_FALLBACK_IMAGES[item.category] || CATEGORY_FALLBACK_IMAGES["Best Deals"];
   item.image = FIXED_ITEM_IMAGES[item.id] || item.fallbackImage;
+});
+
+
+/* =========================================================
+   V6 PROFESSIONAL IMAGE + DEAL OVERRIDES
+   Keeps all names/prices same; improves category-accurate photos.
+========================================================= */
+const V6_ITEM_IMAGES = {
+  "tikka-patty-burger": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=85",
+  "shami-burger": "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=85",
+  "special-shami-burger": "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=85",
+  "pizza-burger": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=85",
+
+  "sp-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
+  "cheese-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
+  "platter-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
+  "zinger-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
+  "paratha-roll-chicken": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
+  "paratha-roll-zinger": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
+  "shawarma-partha": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
+  "zingerta-wrap": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
+  "nanas-wrap": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
+  "arabian-wrap": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
+  "filly-wrap": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
+
+  "club-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
+  "tikka-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
+  "crispy-sandwich": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=85",
+  "mughlai-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
+
+  "loaded-fries": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=900&q=85",
+  "cheese-fries": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
+  "garlic-mayo-fries": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=900&q=85",
+  "fries-small": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
+  "fries-large": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
+  "crunchy-loaded-fries": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=900&q=85",
+
+  "hot-wings-10pc": "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=85",
+  "chicken-nugget": "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=85",
+  "french-fries-side": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
+  "hot-shots": "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=85",
+
+  "grill-burger": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=85",
+  "grill-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
+  "grill-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
+  "chicken-cheese-pasta": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=85",
+  "pizza-pratha": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
+
+  "kelzon-pizza": "https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&fit=crop&w=900&q=85",
+  "mughlai-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
+  "behari-kabab-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
+
+  "deal-1": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85",
+  "deal-2": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=85",
+  "deal-3": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=900&q=85",
+  "deal-4": "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=85",
+  "deal-5": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
+  "deal-6": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=85",
+  "deal-7": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=900&q=85",
+  "deal-8": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=900&q=85",
+  "deal-9": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85",
+  "deal-10": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
+  "deal-11": "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=85",
+  "deal-12": "https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&fit=crop&w=900&q=85",
+  "deal-13": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
+  "deal-14": "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=900&q=85"
+};
+
+MENU_ITEMS.forEach((item) => {
+  if (V6_ITEM_IMAGES[item.id]) item.image = V6_ITEM_IMAGES[item.id];
+  item.fallbackImage = CATEGORY_FALLBACK_IMAGES[item.category] || item.image;
 });
