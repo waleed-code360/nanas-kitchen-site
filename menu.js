@@ -14,7 +14,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 600,
     badge: "Popular",
-    image: "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: "Crunchy and flavorful burger from the main burger menu."
   },
   {
@@ -23,7 +23,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 450,
     badge: "Popular",
-    image: "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: "Crispy chicken burger served hot and fresh."
   },
   {
@@ -32,7 +32,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 650,
     badge: "",
-    image: "https://images.unsplash.com/photo-1586816001966-79b736744398?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: "A bigger stacked burger option for heavier cravings."
   },
   {
@@ -41,7 +41,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 700,
     badge: "Big Bite",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: "A hearty burger option from Nana's burger menu."
   },
   {
@@ -50,7 +50,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 430,
     badge: "",
-    image: "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/filet-burger.jpg",
     description: "Crispy chicken burger served hot."
   },
   {
@@ -59,7 +59,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 430,
     badge: "",
-    image: "https://images.unsplash.com/photo-1607013251379-e6eecfffe234?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/filet-burger.jpg",
     description: "Classic chicken burger."
   },
   {
@@ -68,7 +68,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 200,
     badge: "Budget",
-    image: "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: "A lighter and budget-friendly burger option."
   },
   {
@@ -77,7 +77,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 270,
     badge: "",
-    image: "https://images.unsplash.com/photo-1596662951482-0c4ba74a6df6?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: "Special version of the shami burger."
   },
   {
@@ -86,7 +86,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 700,
     badge: "Fusion",
-    image: "https://images.unsplash.com/photo-1615297928064-24977384d0da?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/filet-burger.jpg",
     description: "Burger with a pizza-style flavor twist."
   },
   {
@@ -95,7 +95,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 650,
     badge: "Signature",
-    image: "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: "One of Nana's signature crunchy burger options."
   },
   {
@@ -104,7 +104,7 @@ const MENU_ITEMS = [
     category: "Burgers",
     price: 430,
     badge: "",
-    image: "https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/filet-burger.jpg",
     description: "Burger with tikka-style patty flavor."
   },
 
@@ -114,7 +114,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 300,
     badge: "",
-    image: "https://images.unsplash.com/photo-1640871223021-3e0a5c0e4e06?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nanas-wrap.jpg",
     description: "Classic shawarma wrap."
   },
   {
@@ -123,7 +123,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 350,
     badge: "",
-    image: "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/cheesy-wrap-grill.jpg",
     description: "Shawarma with cheesy flavor."
   },
   {
@@ -132,7 +132,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 600,
     badge: "",
-    image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nanas-wrap.jpg",
     description: "A fuller shawarma platter option."
   },
   {
@@ -141,7 +141,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 400,
     badge: "",
-    image: "https://images.unsplash.com/photo-1619740455993-9e612b1af08f?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/fried-chicken-wrap.jpg",
     description: "Shawarma with zinger-style filling."
   },
   {
@@ -150,7 +150,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 400,
     badge: "",
-    image: "https://images.unsplash.com/photo-1662116765994-1e4200c43589?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/fried-chicken-wrap.jpg",
     description: "Chicken paratha roll."
   },
   {
@@ -159,7 +159,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 400,
     badge: "",
-    image: "https://images.unsplash.com/photo-1683536620875-703c11f3fc0f?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/fried-chicken-wrap.jpg",
     description: "Zinger paratha roll."
   },
   {
@@ -168,7 +168,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 400,
     badge: "",
-    image: "https://images.unsplash.com/photo-1526318896980-cf78c088247c?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/cheesy-wrap-paper.jpg",
     description: "Shawarma wrapped in paratha."
   },
   {
@@ -177,7 +177,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 600,
     badge: "Popular",
-    image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/wreto-wrap.jpg",
     description: "Special wrap exactly as named on the menu."
   },
   {
@@ -186,7 +186,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 600,
     badge: "Signature",
-    image: "https://images.unsplash.com/photo-1628191011825-7ee7db5cfb8c?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nanas-wrap.jpg",
     description: "Nana's own wrap option."
   },
   {
@@ -195,7 +195,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 700,
     badge: "",
-    image: "https://images.unsplash.com/photo-1530469912745-a215c6b256ea?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/cheesy-wrap-paper.jpg",
     description: "Arabian-style wrap."
   },
   {
@@ -204,7 +204,7 @@ const MENU_ITEMS = [
     category: "Wraps",
     price: 600,
     badge: "",
-    image: "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/cheesy-wrap-paper.jpg",
     description: "Another wrap option from the menu."
   },
 
@@ -214,7 +214,7 @@ const MENU_ITEMS = [
     category: "Sandwiches",
     price: 650,
     badge: "",
-    image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/club-sandwich.jpg",
     description: "Classic club sandwich."
   },
   {
@@ -223,7 +223,7 @@ const MENU_ITEMS = [
     category: "Sandwiches",
     price: 650,
     badge: "",
-    image: "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/club-sandwich.jpg",
     description: "Sandwich with tikka flavor."
   },
   {
@@ -232,7 +232,7 @@ const MENU_ITEMS = [
     category: "Sandwiches",
     price: 650,
     badge: "",
-    image: "https://images.unsplash.com/photo-1481070555726-e2fe8357725c?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/club-sandwich.jpg",
     description: "Crispy chicken sandwich."
   },
   {
@@ -241,7 +241,7 @@ const MENU_ITEMS = [
     category: "Sandwiches",
     price: 650,
     badge: "",
-    image: "https://images.unsplash.com/photo-1509722747041-616f39b57569?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/club-sandwich.jpg",
     description: "Mughlai-style sandwich."
   },
 
@@ -251,7 +251,7 @@ const MENU_ITEMS = [
     category: "Sides",
     price: 750,
     badge: "Popular",
-    image: "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "10 pieces of hot wings."
   },
   {
@@ -260,7 +260,7 @@ const MENU_ITEMS = [
     category: "Sides",
     price: 650,
     badge: "",
-    image: "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "Chicken nuggets served hot."
   },
   {
@@ -269,7 +269,7 @@ const MENU_ITEMS = [
     category: "Sides",
     price: 250,
     badge: "",
-    image: "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "Classic fries."
   },
   {
@@ -278,7 +278,7 @@ const MENU_ITEMS = [
     category: "Sides",
     price: 650,
     badge: "",
-    image: "https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "Spicy bite-sized chicken option."
   },
 
@@ -288,7 +288,7 @@ const MENU_ITEMS = [
     category: "Fries",
     price: 700,
     badge: "Popular",
-    image: "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "Loaded fries with rich toppings."
   },
   {
@@ -297,7 +297,7 @@ const MENU_ITEMS = [
     category: "Fries",
     price: 450,
     badge: "",
-    image: "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "Fries with cheese topping."
   },
   {
@@ -306,7 +306,7 @@ const MENU_ITEMS = [
     category: "Fries",
     price: 300,
     badge: "",
-    image: "https://images.unsplash.com/photo-1585109649139-366815a0d713?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "Fries with garlic mayo flavor."
   },
   {
@@ -315,7 +315,7 @@ const MENU_ITEMS = [
     category: "Fries",
     price: 150,
     badge: "Budget",
-    image: "https://images.unsplash.com/photo-1518013431117-eb1465fa5752?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "Small portion fries."
   },
   {
@@ -324,7 +324,7 @@ const MENU_ITEMS = [
     category: "Fries",
     price: 300,
     badge: "",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "Large portion fries."
   },
   {
@@ -333,7 +333,7 @@ const MENU_ITEMS = [
     category: "Fries",
     price: 600,
     badge: "",
-    image: "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: "Crunchy loaded fries."
   },
 
@@ -343,7 +343,7 @@ const MENU_ITEMS = [
     category: "Our Special",
     price: 450,
     badge: "",
-    image: "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: "Special grilled burger."
   },
   {
@@ -352,7 +352,7 @@ const MENU_ITEMS = [
     category: "Our Special",
     price: 650,
     badge: "",
-    image: "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/club-sandwich.jpg",
     description: "Grilled sandwich."
   },
   {
@@ -361,7 +361,7 @@ const MENU_ITEMS = [
     category: "Our Special",
     price: 400,
     badge: "",
-    image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nanas-wrap.jpg",
     description: "Grilled shawarma."
   },
   {
@@ -370,7 +370,7 @@ const MENU_ITEMS = [
     category: "Our Special",
     price: 750,
     badge: "Popular",
-    image: "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pasta.jpg",
     description: "Chicken pasta with cheese."
   },
   {
@@ -379,7 +379,7 @@ const MENU_ITEMS = [
     category: "Our Special",
     price: 750,
     badge: "",
-    image: "https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-pratha.jpg",
     description: "Special pizza pratha exactly as written on the menu."
   },
 
@@ -389,7 +389,7 @@ const MENU_ITEMS = [
     category: "Drinks & Extras",
     price: 100,
     badge: "",
-    image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/special-drinks-2.jpg",
     description: "Regular tea."
   },
   {
@@ -398,7 +398,7 @@ const MENU_ITEMS = [
     category: "Drinks & Extras",
     price: 150,
     badge: "",
-    image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/special-drinks-2.jpg",
     description: "Special tea."
   },
   {
@@ -407,7 +407,7 @@ const MENU_ITEMS = [
     category: "Drinks & Extras",
     price: 150,
     badge: "",
-    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/lemon-soda.jpg",
     description: "Refreshing lemon soda."
   },
   {
@@ -416,7 +416,7 @@ const MENU_ITEMS = [
     category: "Drinks & Extras",
     price: 200,
     badge: "",
-    image: "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/special-drinks-1.jpg",
     description: "Diet soda option."
   },
   {
@@ -425,7 +425,7 @@ const MENU_ITEMS = [
     category: "Drinks & Extras",
     price: 200,
     badge: "",
-    image: "https://images.unsplash.com/photo-1622484212850-eb596d769edc?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/special-drinks-2.jpg",
     description: "Energy drink option."
   },
   {
@@ -434,7 +434,7 @@ const MENU_ITEMS = [
     category: "Drinks & Extras",
     price: 50,
     badge: "Extra",
-    image: "https://images.unsplash.com/photo-1472476443507-c7a5948772fc?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/special-drinks-1.jpg",
     description: "Extra mayo dip."
   },
   {
@@ -443,7 +443,7 @@ const MENU_ITEMS = [
     category: "Drinks & Extras",
     price: 200,
     badge: "Cool",
-    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/mint-margarita.jpg",
     description: "Mint Margarita Drink - Rs. 200/-"
   },
 
@@ -452,7 +452,7 @@ const MENU_ITEMS = [
     name: "Chicken Tikka + Cold Drink",
     category: "Pizza Flavours",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: "Onion, Capsicum, Tomato, Black Olives, Tikka Chicken, Cheese",
     priceOptions: [
       { label: "S", price: 730 },
@@ -465,7 +465,7 @@ const MENU_ITEMS = [
     name: "Pepperoni Pizza + Cold Drink",
     category: "Pizza Flavours",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: "Onion, Capsicum, Tomato, Chicken Pepperoni, Cheese",
     priceOptions: [
       { label: "S", price: 730 },
@@ -478,7 +478,7 @@ const MENU_ITEMS = [
     name: "Chicken Fajita + Cold Drink",
     category: "Pizza Flavours",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1595854341625-f33ee10dbf94?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-cheesy-olives.jpg",
     description: "Onion, Capsicum, Fajita Chicken, Cheese",
     priceOptions: [
       { label: "S", price: 730 },
@@ -491,7 +491,7 @@ const MENU_ITEMS = [
     name: "Seekh kabab Pizza + Cold Drink",
     category: "Pizza Flavours",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: "Onion, Capsicum, Tomato, Black Olives, K&K Chappli Kabab",
     priceOptions: [
       { label: "S", price: 730 },
@@ -504,7 +504,7 @@ const MENU_ITEMS = [
     name: "Mughlai Pizza + Cold Drink",
     category: "Pizza Flavours",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1548365328-9f547fb0953e?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-veggie.jpg",
     description: "Onion, Capsicum, Tomato, Black Olives, Mughlai Chicken",
     priceOptions: [
       { label: "S", price: 730 },
@@ -517,7 +517,7 @@ const MENU_ITEMS = [
     name: "Cheese lover Pizza + Cold Drink",
     category: "Pizza Flavours",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-cheesy-olives.jpg",
     description: "Onion",
     priceOptions: [
       { label: "S", price: 730 },
@@ -530,7 +530,7 @@ const MENU_ITEMS = [
     name: "Veggie Delight Pizza + Cold Drink",
     category: "Pizza Flavours",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1511689660979-10d2b1aada49?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-veggie.jpg",
     description: "Pizza with lots of pure Mozzarella Cheese",
     priceOptions: [
       { label: "S", price: 730 },
@@ -543,7 +543,7 @@ const MENU_ITEMS = [
     name: "Maxi Pizza + Cold Drink",
     category: "Pizza Flavours",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: "Onion, Capsicum, Tomato, Olives, Mashrooms, Sweet corn, Bell Pepper, Lots of Cheese",
     priceOptions: [
       { label: "S", price: 730 },
@@ -556,7 +556,7 @@ const MENU_ITEMS = [
     name: "kelzon Pizza + Cold Drink",
     category: "Pizza Flavours",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1542281286-9e0a16bb7366?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/kelzon-pizza.jpg",
     description: "Pizza flavour exactly as written on the menu.",
     priceOptions: [
       { label: "S", price: 800 },
@@ -570,7 +570,7 @@ const MENU_ITEMS = [
     name: "Malai Boti Pizza + Cold drink",
     category: "Signature Pizza",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-veggie.jpg",
     description: "Onion, Capsicum, Tomato, Olives, Mashrooms, Sweet corns, Bell Pepper, Lots of Cheese",
     priceOptions: [
       { label: "S", price: 800 },
@@ -583,7 +583,7 @@ const MENU_ITEMS = [
     name: "Behari kabab Pizza + Cold Drink",
     category: "Signature Pizza",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1620374645498-af6bd681a0bd?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: "Signature Behari kabab pizza combo.",
     priceOptions: [
       { label: "S", price: 800 },
@@ -596,7 +596,7 @@ const MENU_ITEMS = [
     name: "Peri Peri Pizza",
     category: "Signature Pizza",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1520201163981-8cc95007dd2e?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: "Onion, Capsicum, Tomato, Olives, Peri Peri Chicken, Cheese",
     priceOptions: [
       { label: "S", price: 800 },
@@ -609,7 +609,7 @@ const MENU_ITEMS = [
     name: "Supreme Pizza",
     category: "Signature Pizza",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: "Sausages, Tikka, Onion, Capsicum, Mashrooms",
     priceOptions: [
       { label: "S", price: 800 },
@@ -622,7 +622,7 @@ const MENU_ITEMS = [
     name: "Chez Stuffer Pizza",
     category: "Signature Pizza",
     badge: "S / M / L",
-    image: "https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-cheesy-olives.jpg",
     description: "Sausages, Tikka, Onion, Capsicum, Mashrooms",
     priceOptions: [
       { label: "S", price: 850 },
@@ -637,7 +637,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 550,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: ["1 Zinger", "1 Fries", "1 Coke (350ml)"]
   },
   {
@@ -646,7 +646,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 870,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1551782450-a2132b4ba21d?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: ["1 Shawarma", "1 Zinger", "1 Fries", "1 Coke (500ml)"]
   },
   {
@@ -655,7 +655,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 1100,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: ["2 Shawarma", "2 Shami Burger", "1 Fries", "1 Coke (500ml)"]
   },
   {
@@ -664,7 +664,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 1290,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1608039829572-78524f79c4c7?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: ["1 Wings", "1 Club Sandwich", "1 Coke (350ml)"]
   },
   {
@@ -673,7 +673,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 1100,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: ["1 Crispy Chicken", "1 Crispy Sandwich", "1 Coke (350ml)"]
   },
   {
@@ -682,7 +682,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 3550,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: ["5 Shawarma", "5 Zinger", "1 Family Fries", "1 Coke (1.5ltr)"]
   },
   {
@@ -691,7 +691,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 1000,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1551782450-17144efb9c50?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/zigzag-burger.jpg",
     description: ["2 Zinger", "1 Fries", "1 Coke (500ml)"]
   },
   {
@@ -700,7 +700,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 700,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: ["1 Shami Burger", "1 Shawarma", "1 Fries", "1 Coke (500ml)"]
   },
   {
@@ -709,7 +709,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 1300,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: ["1 Zinger Burger", "1 Small Pizza", "1 Fries", "1 Coke (500ml)"]
   },
   {
@@ -718,7 +718,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 1200,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/nana-promo.jpg",
     description: ["1 Zinger + Fries", "1 Sandwich", "1 Coke (500ml)"]
   },
   {
@@ -727,7 +727,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 1650,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: ["5 Pc Wings", "1 Zinger Burger", "1 Small Pizza", "1 Coke (500ml)"]
   },
   {
@@ -736,7 +736,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 1750,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: ["2 Small Pizza", "+ 1 Free Pizza"]
   },
   {
@@ -745,7 +745,7 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 3300,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: ["2 Medium Pizza", "+ 1 Free Pizza"]
   },
   {
@@ -754,180 +754,92 @@ const MENU_ITEMS = [
     category: "Best Deals",
     price: 4300,
     badge: "Deal",
-    image: "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/menu/pizza-loaded.jpg",
     description: ["2 Large Pizza", "+ 1 Free Pizza"]
   }
 ];
 
-/* =========================================================
-   IMAGE FIXES - category-correct food photos
-   These overrides keep menu names/prices same and only fix wrong images.
-========================================================= */
-const CATEGORY_FALLBACK_IMAGES = {
-  "Burgers": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85",
-  "Wraps": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",
-  "Sandwiches": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "Fries": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
-  "Sides": "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=85",
-  "Our Special": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=900&q=85",
-  "Drinks & Extras": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=85",
-  "Pizza Flavours": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-  "Signature Pizza": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=900&q=85",
-  "Best Deals": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=85"
+
+/* FINAL LOCAL IMAGE OVERRIDES - V11 */
+const FINAL_ITEM_IMAGES = {
+  "cheetos-burger": "assets/images/menu/zigzag-burger.jpg",
+  "zinger-burger": "assets/images/menu/zigzag-burger.jpg",
+  "tower-burger": "assets/images/menu/zigzag-burger.jpg",
+  "mighty-burger": "assets/images/menu/zigzag-burger.jpg",
+  "crispy-chicken-burger": "assets/images/menu/filet-burger.jpg",
+  "chicken-burger": "assets/images/menu/filet-burger.jpg",
+  "shami-burger": "assets/images/menu/zigzag-burger.jpg",
+  "special-shami-burger": "assets/images/menu/zigzag-burger.jpg",
+  "pizza-burger": "assets/images/menu/filet-burger.jpg",
+  "nanas-crunchy-burger": "assets/images/menu/zigzag-burger.jpg",
+  "tikka-patty-burger": "assets/images/menu/filet-burger.jpg",
+  "sp-shawarma": "assets/images/menu/nanas-wrap.jpg",
+  "cheese-shawarma": "assets/images/menu/cheesy-wrap-grill.jpg",
+  "platter-shawarma": "assets/images/menu/nanas-wrap.jpg",
+  "zinger-shawarma": "assets/images/menu/fried-chicken-wrap.jpg",
+  "paratha-roll-chicken": "assets/images/menu/fried-chicken-wrap.jpg",
+  "paratha-roll-zinger": "assets/images/menu/fried-chicken-wrap.jpg",
+  "shawarma-partha": "assets/images/menu/cheesy-wrap-paper.jpg",
+  "zingerta-wrap": "assets/images/menu/wreto-wrap.jpg",
+  "nanas-wrap": "assets/images/menu/nanas-wrap.jpg",
+  "arabian-wrap": "assets/images/menu/cheesy-wrap-paper.jpg",
+  "filly-wrap": "assets/images/menu/cheesy-wrap-paper.jpg",
+  "club-sandwich": "assets/images/menu/club-sandwich.jpg",
+  "tikka-sandwich": "assets/images/menu/club-sandwich.jpg",
+  "crispy-sandwich": "assets/images/menu/club-sandwich.jpg",
+  "mughlai-sandwich": "assets/images/menu/club-sandwich.jpg",
+  "hot-wings-10pc": "assets/images/menu/nana-promo.jpg",
+  "chicken-nugget": "assets/images/menu/nana-promo.jpg",
+  "french-fries-side": "assets/images/menu/nana-promo.jpg",
+  "hot-shots": "assets/images/menu/nana-promo.jpg",
+  "loaded-fries": "assets/images/menu/nana-promo.jpg",
+  "cheese-fries": "assets/images/menu/nana-promo.jpg",
+  "garlic-mayo-fries": "assets/images/menu/nana-promo.jpg",
+  "fries-small": "assets/images/menu/nana-promo.jpg",
+  "fries-large": "assets/images/menu/nana-promo.jpg",
+  "crunchy-loaded-fries": "assets/images/menu/nana-promo.jpg",
+  "grill-burger": "assets/images/menu/zigzag-burger.jpg",
+  "grill-sandwich": "assets/images/menu/club-sandwich.jpg",
+  "grill-shawarma": "assets/images/menu/nanas-wrap.jpg",
+  "chicken-cheese-pasta": "assets/images/menu/pasta.jpg",
+  "pizza-pratha": "assets/images/menu/pizza-pratha.jpg",
+  "tea": "assets/images/menu/special-drinks-2.jpg",
+  "sp-tea": "assets/images/menu/special-drinks-2.jpg",
+  "lemon-soda": "assets/images/menu/lemon-soda.jpg",
+  "diet-soda": "assets/images/menu/special-drinks-1.jpg",
+  "sting-soda": "assets/images/menu/special-drinks-2.jpg",
+  "mayo-dip": "assets/images/menu/special-drinks-1.jpg",
+  "mint-margarita-drink": "assets/images/menu/mint-margarita.jpg",
+  "chicken-tikka-pizza": "assets/images/menu/pizza-loaded.jpg",
+  "pepperoni-pizza": "assets/images/menu/pizza-loaded.jpg",
+  "chicken-fajita-pizza": "assets/images/menu/pizza-cheesy-olives.jpg",
+  "seekh-kabab-pizza": "assets/images/menu/pizza-loaded.jpg",
+  "mughlai-pizza": "assets/images/menu/pizza-veggie.jpg",
+  "cheese-lover-pizza": "assets/images/menu/pizza-cheesy-olives.jpg",
+  "veggie-delight-pizza": "assets/images/menu/pizza-veggie.jpg",
+  "maxi-pizza": "assets/images/menu/pizza-loaded.jpg",
+  "kelzon-pizza": "assets/images/menu/kelzon-pizza.jpg",
+  "malai-boti-pizza": "assets/images/menu/pizza-veggie.jpg",
+  "behari-kabab-pizza": "assets/images/menu/pizza-loaded.jpg",
+  "peri-peri-pizza": "assets/images/menu/pizza-loaded.jpg",
+  "supreme-pizza": "assets/images/menu/pizza-loaded.jpg",
+  "chez-stuffer-pizza": "assets/images/menu/pizza-cheesy-olives.jpg",
+  "deal-1": "assets/images/menu/zigzag-burger.jpg",
+  "deal-2": "assets/images/menu/nana-promo.jpg",
+  "deal-3": "assets/images/menu/nana-promo.jpg",
+  "deal-4": "assets/images/menu/nana-promo.jpg",
+  "deal-5": "assets/images/menu/nana-promo.jpg",
+  "deal-6": "assets/images/menu/nana-promo.jpg",
+  "deal-7": "assets/images/menu/zigzag-burger.jpg",
+  "deal-8": "assets/images/menu/nana-promo.jpg",
+  "deal-9": "assets/images/menu/pizza-loaded.jpg",
+  "deal-10": "assets/images/menu/nana-promo.jpg",
+  "deal-11": "assets/images/menu/pizza-loaded.jpg",
+  "deal-12": "assets/images/menu/pizza-loaded.jpg",
+  "deal-13": "assets/images/menu/pizza-loaded.jpg",
+  "deal-14": "assets/images/menu/pizza-loaded.jpg",
 };
-
-const FIXED_ITEM_IMAGES = {
-  // Burgers
-  "cheetos-burger": "https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=900&q=85",
-  "zinger-burger": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=900&q=85",
-  "tower-burger": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85",
-  "mighty-burger": "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=900&q=85",
-  "crispy-chicken-burger": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=900&q=85",
-  "chicken-burger": "https://images.unsplash.com/photo-1606755962773-d324e0a13086?auto=format&fit=crop&w=900&q=85",
-  "shami-burger": "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=85",
-  "special-shami-burger": "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=85",
-  "pizza-burger": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=85",
-  "nanas-crunchy-burger": "https://images.unsplash.com/photo-1520072959219-c595dc870360?auto=format&fit=crop&w=900&q=85",
-  "tikka-patty-burger": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=85",
-
-  // Wraps / shawarma / rolls
-  "sp-shawarma": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",
-  "cheese-shawarma": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",
-  "platter-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
-  "zinger-shawarma": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",
-  "paratha-roll-chicken": "https://images.unsplash.com/photo-1662116765994-1e4200c43589?auto=format&fit=crop&w=900&q=85",
-  "paratha-roll-zinger": "https://images.unsplash.com/photo-1662116765994-1e4200c43589?auto=format&fit=crop&w=900&q=85",
-  "shawarma-partha": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",
-  "zingerta-wrap": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",
-  "nanas-wrap": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",
-  "arabian-wrap": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",
-  "filly-wrap": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
-
-  // Sandwiches
-  "club-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "tikka-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "crispy-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "mughlai-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-
-  // Sides
-  "hot-wings-10pc": "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=85",
-  "chicken-nugget": "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=85",
-  "french-fries-side": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
-  "hot-shots": "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=85",
-
-  // Fries
-  "loaded-fries": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=900&q=85",
-  "cheese-fries": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
-  "garlic-mayo-fries": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=900&q=85",
-  "fries-small": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
-  "fries-large": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
-  "crunchy-loaded-fries": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=900&q=85",
-
-  // Our Special
-  "grill-burger": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=85",
-  "grill-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "grill-shawarma": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?auto=format&fit=crop&w=900&q=85",
-  "chicken-cheese-pasta": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=85",
-  "pizza-pratha": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-
-  // Drinks
-  "tea": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85",
-  "sp-tea": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=900&q=85",
-  "lemon-soda": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=85",
-  "diet-soda": "https://images.unsplash.com/photo-1581006852262-e4307cf6283a?auto=format&fit=crop&w=900&q=85",
-  "sting-soda": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?auto=format&fit=crop&w=900&q=85",
-  "mayo-dip": "https://images.unsplash.com/photo-1472476443507-c7a5948772fc?auto=format&fit=crop&w=900&q=85",
-  "mint-margarita-drink": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=900&q=85",
-
-  // Pizzas - no sunset / random image
-  "chicken-tikka-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-  "pepperoni-pizza": "https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?auto=format&fit=crop&w=900&q=85",
-  "chicken-fajita-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-  "seekh-kabab-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-  "mughlai-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-  "cheese-lover-pizza": "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=900&q=85",
-  "veggie-delight-pizza": "https://images.unsplash.com/photo-1511689660979-10d2b1aada49?auto=format&fit=crop&w=900&q=85",
-  "maxi-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-  "kelzon-pizza": "https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&fit=crop&w=900&q=85",
-  "malai-boti-pizza": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=900&q=85",
-  "behari-kabab-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-  "peri-peri-pizza": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=900&q=85",
-  "supreme-pizza": "https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?auto=format&fit=crop&w=900&q=85",
-  "chez-stuffer-pizza": "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?auto=format&fit=crop&w=900&q=85"
-};
-
 MENU_ITEMS.forEach((item) => {
-  item.fallbackImage = CATEGORY_FALLBACK_IMAGES[item.category] || CATEGORY_FALLBACK_IMAGES["Best Deals"];
-  item.image = FIXED_ITEM_IMAGES[item.id] || item.fallbackImage;
-});
-
-
-/* =========================================================
-   V6 PROFESSIONAL IMAGE + DEAL OVERRIDES
-   Keeps all names/prices same; improves category-accurate photos.
-========================================================= */
-const V6_ITEM_IMAGES = {
-  "tikka-patty-burger": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=85",
-  "shami-burger": "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=85",
-  "special-shami-burger": "https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=900&q=85",
-  "pizza-burger": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?auto=format&fit=crop&w=900&q=85",
-
-  "sp-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
-  "cheese-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
-  "platter-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
-  "zinger-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
-  "paratha-roll-chicken": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
-  "paratha-roll-zinger": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
-  "shawarma-partha": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
-  "zingerta-wrap": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
-  "nanas-wrap": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
-  "arabian-wrap": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
-  "filly-wrap": "https://images.unsplash.com/photo-1615870216519-2f9fa575fa5c?auto=format&fit=crop&w=900&q=85",
-
-  "club-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "tikka-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "crispy-sandwich": "https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=85",
-  "mughlai-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-
-  "loaded-fries": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=900&q=85",
-  "cheese-fries": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
-  "garlic-mayo-fries": "https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=900&q=85",
-  "fries-small": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
-  "fries-large": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
-  "crunchy-loaded-fries": "https://images.unsplash.com/photo-1576107232684-1279f390859f?auto=format&fit=crop&w=900&q=85",
-
-  "hot-wings-10pc": "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=85",
-  "chicken-nugget": "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=85",
-  "french-fries-side": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?auto=format&fit=crop&w=900&q=85",
-  "hot-shots": "https://images.unsplash.com/photo-1562967916-eb82221dfb92?auto=format&fit=crop&w=900&q=85",
-
-  "grill-burger": "https://images.unsplash.com/photo-1553979459-d2229ba7433b?auto=format&fit=crop&w=900&q=85",
-  "grill-sandwich": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "grill-shawarma": "https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=85",
-  "chicken-cheese-pasta": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&w=900&q=85",
-  "pizza-pratha": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-
-  "kelzon-pizza": "https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&fit=crop&w=900&q=85",
-  "mughlai-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-  "behari-kabab-pizza": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-
-  "deal-1": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=900&q=85",
-  "deal-2": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=85",
-  "deal-3": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=900&q=85",
-  "deal-4": "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=85",
-  "deal-5": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "deal-6": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=900&q=85",
-  "deal-7": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=900&q=85",
-  "deal-8": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=900&q=85",
-  "deal-9": "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85",
-  "deal-10": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?auto=format&fit=crop&w=900&q=85",
-  "deal-11": "https://images.unsplash.com/photo-1608039755401-742074f0548d?auto=format&fit=crop&w=900&q=85",
-  "deal-12": "https://images.unsplash.com/photo-1593504049359-74330189a345?auto=format&fit=crop&w=900&q=85",
-  "deal-13": "https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=85",
-  "deal-14": "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?auto=format&fit=crop&w=900&q=85"
-};
-
-MENU_ITEMS.forEach((item) => {
-  if (V6_ITEM_IMAGES[item.id]) item.image = V6_ITEM_IMAGES[item.id];
-  item.fallbackImage = CATEGORY_FALLBACK_IMAGES[item.category] || item.image;
+  if (FINAL_ITEM_IMAGES[item.id]) item.image = FINAL_ITEM_IMAGES[item.id];
+  item.fallbackImage = item.image;
 });

@@ -22,6 +22,7 @@ const categoryOrder = [
 ];
 
 const menuTabs = document.querySelector("#menuTabs");
+const mobileCurrentCategory = document.querySelector("#mobileCurrentCategory strong");
 const menuGrid = document.querySelector("#menuGrid");
 const dealStrip = document.querySelector("#dealStrip");
 const floatingDeals = document.querySelector("#floatingDeals");
@@ -65,9 +66,22 @@ function getOrderedCategories() {
 }
 
 function setActiveCategory(category) {
-  document.querySelectorAll(".tab-btn").forEach((button) => {
-    button.classList.toggle("active", button.dataset.category === category);
+  const activeButton = [...document.querySelectorAll(".tab-btn")].find((button) => {
+    const isActive = button.dataset.category === category;
+    button.classList.toggle("active", isActive);
+    return isActive;
   });
+
+  if (mobileCurrentCategory) mobileCurrentCategory.textContent = category;
+
+  // Important mobile fix:
+  // Do NOT use activeButton.scrollIntoView() here. On Android/iOS it can move
+  // the full page vertically and make the menu feel stuck near the hero section.
+  // This only scrolls the category tabs horizontally, keeping page scroll normal.
+  if (activeButton && menuTabs && window.matchMedia("(max-width: 768px)").matches) {
+    const targetLeft = activeButton.offsetLeft - menuTabs.clientWidth / 2 + activeButton.clientWidth / 2;
+    menuTabs.scrollTo({ left: Math.max(0, targetLeft), behavior: "smooth" });
+  }
 }
 
 function renderTabs() {
@@ -455,7 +469,11 @@ document.addEventListener("click", (event) => {
   const tab = event.target.closest("[data-target]");
   if (tab) {
     const target = document.getElementById(tab.dataset.target);
-    if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+    if (target) {
+      const stickyOffset = window.matchMedia("(max-width: 768px)").matches ? 116 : 120;
+      const y = target.getBoundingClientRect().top + window.scrollY - stickyOffset;
+      window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
+    }
     setActiveCategory(tab.dataset.category);
     return;
   }

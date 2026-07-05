@@ -2762,3 +2762,450 @@ body.modal-open {
     min-width: 220px !important;
   }
 }
+
+
+/* =========================================================
+   V8 MOBILE NAV + ANDROID/iOS RESPONSIVE FIXES
+   - Shows current category clearly on mobile
+   - Keeps active tab centered while scrolling
+   - Makes cards, tabs, modal and floating buttons friendlier
+========================================================= */
+
+.mobile-current-category {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    overscroll-behavior-y: none;
+  }
+
+  .site-header {
+    top: calc(10px + env(safe-area-inset-top, 0px)) !important;
+    width: calc(100% - 20px) !important;
+    min-height: 56px !important;
+    padding: 8px 10px !important;
+    border-radius: 999px !important;
+  }
+
+  .brand {
+    gap: 8px !important;
+    min-width: 0 !important;
+  }
+
+  .brand-mark {
+    width: 40px !important;
+    height: 40px !important;
+    flex: 0 0 40px !important;
+  }
+
+  .brand span:last-child {
+    font-size: 0.92rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+
+  .hero {
+    min-height: 82vh !important;
+    padding: calc(102px + env(safe-area-inset-top, 0px)) 16px 46px !important;
+  }
+
+  .hero h1 {
+    max-width: 330px !important;
+    font-size: clamp(2.1rem, 11.2vw, 3.25rem) !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.05em !important;
+  }
+
+  .hero .hero-text {
+    max-width: 330px !important;
+    font-size: 0.95rem !important;
+    line-height: 1.55 !important;
+  }
+
+  .hero-actions {
+    width: min(100%, 340px) !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+    min-height: 46px !important;
+  }
+
+  .menu-section {
+    padding: 28px 0 52px !important;
+  }
+
+  .section-head {
+    padding: 0 16px !important;
+    margin-bottom: 18px !important;
+    text-align: left !important;
+  }
+
+  .section-head h2 {
+    font-size: 2.25rem !important;
+  }
+
+  .section-head p:not(.script-kicker) {
+    display: none !important;
+  }
+
+  .menu-sticky-wrap {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 100 !important;
+    gap: 8px !important;
+    margin: 0 0 22px !important;
+    padding: calc(8px + env(safe-area-inset-top, 0px)) 10px 10px !important;
+    background: rgba(255, 246, 234, 0.96) !important;
+    border-bottom: 1px solid rgba(43, 33, 24, 0.08) !important;
+    box-shadow: 0 12px 28px rgba(43, 33, 24, 0.12) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+  }
+
+  .mobile-current-category {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 10px !important;
+    border-radius: 16px !important;
+    background: #17110e !important;
+    color: #fff !important;
+    padding: 10px 12px !important;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.14) !important;
+  }
+
+  .mobile-current-category span {
+    color: rgba(255, 255, 255, 0.68) !important;
+    font-size: 0.72rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.08em !important;
+    text-transform: uppercase !important;
+  }
+
+  .mobile-current-category strong {
+    color: #ffb21a !important;
+    font-size: 0.98rem !important;
+    font-weight: 900 !important;
+    max-width: 55vw !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+  }
+
+  .deal-strip {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    width: 100% !important;
+    padding: 8px !important;
+    border-radius: 16px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x proximity !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .deal-strip-label {
+    flex: 0 0 auto !important;
+    font-size: 0.78rem !important;
+    padding: 8px 10px !important;
+  }
+
+  .deal-strip-list {
+    min-width: 0 !important;
+    display: flex !important;
+    gap: 7px !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .deal-chip {
+    scroll-snap-align: start !important;
+    padding: 8px 10px !important;
+    font-size: 0.78rem !important;
+  }
+
+  .menu-tabs {
+    position: relative !important;
+    width: 100% !important;
+    display: flex !important;
+    gap: 7px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 7px !important;
+    border-radius: 16px !important;
+    white-space: nowrap !important;
+    scroll-snap-type: x proximity !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .menu-tabs::-webkit-scrollbar,
+  .deal-strip-list::-webkit-scrollbar,
+  .category-grid::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .tab-btn {
+    scroll-snap-align: center !important;
+    min-height: 38px !important;
+    padding: 8px 12px !important;
+    font-size: 0.82rem !important;
+    border-radius: 999px !important;
+    box-shadow: none !important;
+  }
+
+  .tab-btn.active {
+    transform: scale(1.04) !important;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.16) !important;
+  }
+
+  .menu-category-section {
+    padding: 24px 0 18px !important;
+    margin-bottom: 26px !important;
+    scroll-margin-top: 155px !important;
+  }
+
+  .category-title-row {
+    padding: 0 16px !important;
+    display: block !important;
+    margin-bottom: 12px !important;
+  }
+
+  .category-title-row span {
+    font-size: 0.78rem !important;
+    margin-bottom: 3px !important;
+  }
+
+  .category-title-row h2 {
+    font-size: clamp(1.9rem, 8.4vw, 2.55rem) !important;
+    line-height: 1 !important;
+  }
+
+  .category-whatsapp {
+    display: none !important;
+  }
+
+  .category-grid {
+    display: flex !important;
+    gap: 12px !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    padding: 0 16px 14px !important;
+    scroll-padding-left: 16px !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .menu-card {
+    flex: 0 0 72vw !important;
+    width: 72vw !important;
+    min-width: 226px !important;
+    max-width: 286px !important;
+    scroll-snap-align: start !important;
+    border-radius: 18px !important;
+  }
+
+  .menu-img {
+    height: 132px !important;
+    aspect-ratio: auto !important;
+  }
+
+  .badge {
+    top: 10px !important;
+    left: 10px !important;
+    padding: 6px 9px !important;
+    font-size: 0.72rem !important;
+  }
+
+  .menu-body {
+    padding: 12px !important;
+    min-height: auto !important;
+  }
+
+  .menu-body h3 {
+    min-height: 2.35em !important;
+    font-size: 1rem !important;
+    line-height: 1.18 !important;
+  }
+
+  .menu-body p,
+  .menu-points {
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    min-height: 2.8em !important;
+    font-size: 0.86rem !important;
+  }
+
+  .menu-price {
+    font-size: 1rem !important;
+  }
+
+  .menu-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+
+  .menu-actions .btn {
+    min-height: 40px !important;
+    padding: 9px 12px !important;
+    font-size: 0.85rem !important;
+  }
+
+  .item-modal.open {
+    padding: 10px !important;
+    align-items: flex-end !important;
+  }
+
+  .modal-shell {
+    width: 100% !important;
+    max-height: 92dvh !important;
+    border-radius: 24px 24px 0 0 !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .modal-content {
+    grid-template-columns: 1fr !important;
+  }
+
+  .modal-img {
+    min-height: 190px !important;
+    max-height: 230px !important;
+  }
+
+  .modal-body {
+    padding: 18px !important;
+  }
+
+  .modal-body h2 {
+    font-size: clamp(1.55rem, 8vw, 2.2rem) !important;
+  }
+
+  .modal-add-row {
+    position: sticky !important;
+    bottom: 0 !important;
+    background: #fff !important;
+    padding-top: 10px !important;
+  }
+
+  .cart-toggle {
+    right: 12px !important;
+    bottom: calc(86px + env(safe-area-inset-bottom, 0px)) !important;
+    width: 60px !important;
+    height: 60px !important;
+  }
+
+  .floating-actions {
+    right: 12px !important;
+    bottom: calc(18px + env(safe-area-inset-bottom, 0px)) !important;
+    gap: 10px !important;
+  }
+
+  .floating-actions a {
+    width: 54px !important;
+    height: 54px !important;
+  }
+
+  .cart-drawer {
+    width: min(100vw, 420px) !important;
+    max-height: 82dvh !important;
+    overflow-y: auto !important;
+    border-radius: 24px 24px 0 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+  }
+
+  .site-footer {
+    padding: 52px 18px 130px !important;
+  }
+
+  .footer-list span,
+  .footer-list a {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .menu-card {
+    flex-basis: 78vw !important;
+    width: 78vw !important;
+    min-width: 218px !important;
+  }
+
+  .tab-btn {
+    font-size: 0.78rem !important;
+    padding: 8px 10px !important;
+  }
+
+  .mobile-current-category strong {
+    max-width: 50vw !important;
+  }
+}
+
+
+/* =========================================================
+   V9 MOBILE SCROLL FIX
+   Keeps Android/iOS page scrolling normal while category rows
+   and menu cards remain horizontally swipeable.
+========================================================= */
+@media (max-width: 768px) {
+  html,
+  body {
+    height: auto !important;
+    min-height: 100% !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    touch-action: auto !important;
+    overscroll-behavior-y: auto !important;
+  }
+
+  body:not(.modal-open) {
+    position: static !important;
+  }
+
+  .hero {
+    min-height: 86svh !important;
+  }
+
+  .menu-section,
+  .menu-category-section,
+  .site-footer {
+    overflow: visible !important;
+  }
+
+  .menu-tabs,
+  .deal-strip,
+  .deal-strip-list,
+  .category-grid {
+    touch-action: auto !important;
+    overscroll-behavior-x: contain !important;
+    overscroll-behavior-y: auto !important;
+  }
+
+  .menu-sticky-wrap {
+    max-height: none !important;
+  }
+}
+
+body.modal-open {
+  overflow: hidden !important;
+}
