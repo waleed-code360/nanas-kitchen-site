@@ -2,7 +2,7 @@
 const RESTAURANT = {
   name: "NANA'S KITCHEN",
   tagline: "ORDER NOW",
-  location: "Shop no9, Ground Floor, K-1 Block Marhaba Mall, Valencia Town Lahore",
+  location: "Sunrise Rd, Block H1 Block K 1, Valencia, Lahore, Pakistan",
   whatsappNumber: "923216311367",
   phoneNumbers: ["0321-6311367", "0323-4407289"],
   openingHours: "1:00 PM - 3:00 AM"
