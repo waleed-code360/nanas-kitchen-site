@@ -4198,3 +4198,62 @@ html {
     font-size: 0.84rem !important;
   }
 }
+
+
+/* =========================================================
+   V17 REMOVE POPULAR CARDS + MOBILE HERO CHIPS CLEANUP
+========================================================= */
+
+.popular-section,
+.hero-highlights {
+  display: none !important;
+}
+
+.hero {
+  min-height: 610px !important;
+  padding-bottom: 58px !important;
+}
+
+.hero-copy {
+  max-width: 860px !important;
+}
+
+.hero-actions {
+  margin-top: 24px !important;
+}
+
+.menu-section {
+  margin-top: 0 !important;
+  padding-top: 56px !important;
+}
+
+.menu-section .section-head {
+  margin-bottom: 24px !important;
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: 500px !important;
+    padding-top: 132px !important;
+    padding-bottom: 34px !important;
+  }
+
+  .hero h1 {
+    white-space: normal !important;
+    font-size: clamp(2.05rem, 11vw, 2.85rem) !important;
+  }
+
+  .hero .hero-text,
+  .hero-promo {
+    margin-top: 12px !important;
+    font-size: 0.94rem !important;
+  }
+
+  .hero-actions {
+    margin-top: 18px !important;
+  }
+
+  .menu-section {
+    padding-top: 38px !important;
+  }
+}
