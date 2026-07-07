@@ -292,6 +292,17 @@ function observeMenuSections() {
   sections.forEach((section) => menuObserver.observe(section));
 }
 
+
+function setCartOpen(open) {
+  if (!cartPanel) return;
+  cartPanel.classList.toggle("open", Boolean(open));
+  document.body.classList.toggle("cart-open", Boolean(open));
+}
+
+function toggleCartOpen() {
+  setCartOpen(!cartPanel?.classList.contains("open"));
+}
+
 function saveCart() {
   localStorage.setItem(storageKey, JSON.stringify(cart));
 }
@@ -315,7 +326,7 @@ function addToCart(id, optionLabel = "", optionPrice = null, quantity = 1) {
   else cart.push({ id: cartId, name: finalName, price: finalPrice, quantity: Number(quantity) });
   saveCart();
   renderCart();
-  cartPanel.classList.add("open");
+  setCartOpen(true);
 }
 
 function changeQuantity(id, direction) {
@@ -356,7 +367,7 @@ function renderCart() {
 
 function sendCartOrder() {
   if (!cart.length) {
-    cartPanel.classList.add("open");
+    setCartOpen(true);
     return;
   }
   const customerAddress = customerAddressInput?.value.trim() || "";
@@ -548,8 +559,8 @@ function initHeroVideo() {
   if (playPromise?.catch) playPromise.catch(() => document.body.classList.add("hero-video-paused"));
 }
 
-document.querySelector("#cartToggle")?.addEventListener("click", () => cartPanel.classList.toggle("open"));
-document.querySelector("#cartClose")?.addEventListener("click", () => cartPanel.classList.remove("open"));
+document.querySelector("#cartToggle")?.addEventListener("click", toggleCartOpen);
+document.querySelector("#cartClose")?.addEventListener("click", () => setCartOpen(false));
 document.querySelector("#sendOrder")?.addEventListener("click", sendCartOrder);
 
 setContactLinks();
