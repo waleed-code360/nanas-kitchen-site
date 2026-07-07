@@ -226,6 +226,35 @@ function renderDealStrip() {
   `;
 }
 
+function renderPopularDeals() {
+  const popularWrap = document.querySelector("#popularDeals");
+  if (!popularWrap) return;
+
+  const popularIds = ["deal-1", "deal-2", "zinger-burger", "chicken-tikka-pizza"];
+  const popularItems = popularIds
+    .map((id) => MENU_ITEMS.find((item) => item.id === id))
+    .filter(Boolean);
+
+  popularWrap.innerHTML = popularItems
+    .map((item) => `
+      <article class="popular-card" data-open-detail="${item.id}" tabindex="0" aria-label="View ${item.name} details">
+        <div class="popular-img">
+          <img src="${item.image}" data-fallback="${item.fallbackImage || item.image}" alt="${item.name}" loading="lazy" onerror="this.onerror=null;this.src=this.dataset.fallback;" />
+        </div>
+        <div class="popular-body">
+          <span>${item.category}</span>
+          <h3>${item.name}</h3>
+          ${cardPriceMarkup(item)}
+          <button class="btn primary" type="button" data-open-detail="${item.id}">
+            <i data-lucide="plus"></i> Order This
+          </button>
+        </div>
+      </article>
+    `)
+    .join("");
+  renderIcons();
+}
+
 function renderFloatingDeals() {
   const deals = MENU_ITEMS.filter((item) => item.category === "Best Deals").slice(0, 3);
   floatingDeals.innerHTML = `
@@ -527,6 +556,7 @@ setContactLinks();
 renderTabs();
 renderDealStrip();
 renderFloatingDeals();
+renderPopularDeals();
 renderMenu();
 renderCart();
 renderIcons();

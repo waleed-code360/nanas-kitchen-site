@@ -3209,3 +3209,462 @@ body.modal-open {
 body.modal-open {
   overflow: hidden !important;
 }
+
+
+/* =========================================================
+   V14 THEME REFRESH - Nando's bold + Chipotle order flow
+   Product data, prices and image paths are not changed here.
+   ========================================================= */
+:root {
+  --red: #D62828;
+  --mustard: #FFB703;
+  --charcoal: #1B1B1B;
+  --dark: #1B1B1B;
+  --cream: #FFF4E6;
+  --warm-white: #FFFFFF;
+  --green: #25D366;
+  --muted: #6F6257;
+  --line: rgba(27, 27, 27, 0.12);
+  --shadow: 0 22px 50px rgba(27, 27, 27, 0.12);
+  --radius: 24px;
+}
+
+body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(255, 183, 3, 0.18), transparent 28%),
+    radial-gradient(circle at 88% 8%, rgba(214, 40, 40, 0.10), transparent 30%),
+    var(--cream);
+  color: var(--charcoal);
+}
+
+.top-bar {
+  position: fixed;
+  z-index: 130;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--red);
+  color: #fff;
+  box-shadow: 0 10px 30px rgba(214, 40, 40, 0.22);
+}
+
+.top-bar-inner {
+  width: min(1180px, calc(100% - 28px));
+  min-height: 42px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+
+.top-bar span {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+
+.top-bar svg {
+  width: 16px;
+  height: 16px;
+}
+
+.site-header {
+  top: 56px;
+  min-height: 72px;
+  background: rgba(27, 27, 27, 0.94);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.26);
+}
+
+.brand-mark {
+  background: var(--mustard);
+  color: var(--charcoal);
+}
+
+.site-nav a.nav-cta {
+  background: var(--mustard);
+  color: var(--charcoal);
+  box-shadow: 0 12px 24px rgba(255, 183, 3, 0.22);
+}
+
+.site-nav a.nav-cta:hover {
+  background: #fff;
+  color: var(--red);
+}
+
+.hero {
+  min-height: 720px;
+  padding-top: 190px;
+  background: var(--charcoal);
+}
+
+.hero-video {
+  opacity: 0.42;
+  filter: saturate(1.08) contrast(1.05);
+}
+
+.hero-shade {
+  background:
+    radial-gradient(circle at 82% 20%, rgba(255, 183, 3, 0.38), transparent 26%),
+    radial-gradient(circle at 12% 82%, rgba(214, 40, 40, 0.30), transparent 30%),
+    linear-gradient(90deg, rgba(27, 27, 27, 0.94), rgba(27, 27, 27, 0.60) 56%, rgba(27, 27, 27, 0.82));
+}
+
+.hero-inner {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.hero h1 {
+  max-width: 780px;
+  font-size: clamp(3rem, 6.4vw, 5.8rem);
+  text-transform: uppercase;
+}
+
+.hero-text {
+  max-width: 710px;
+}
+
+.hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.hero-highlights span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.10);
+  color: #fff;
+  font-weight: 900;
+  backdrop-filter: blur(12px);
+}
+
+.hero-highlights svg {
+  width: 18px;
+  height: 18px;
+  color: var(--mustard);
+}
+
+.btn.primary {
+  background: var(--mustard);
+  color: var(--charcoal);
+}
+
+.btn.primary:hover {
+  background: var(--red);
+  color: #fff;
+}
+
+.btn.whatsapp,
+.category-whatsapp,
+.float-whatsapp {
+  background: var(--green);
+  color: #fff;
+}
+
+.popular-section,
+.menu-section,
+.order-steps,
+.location-section,
+.site-footer {
+  width: min(1180px, calc(100% - 32px));
+}
+
+.popular-section {
+  margin: -72px auto 42px;
+  position: relative;
+  z-index: 3;
+}
+
+.popular-section .section-head {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  padding: 26px 28px;
+  box-shadow: var(--shadow);
+}
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.popular-card {
+  overflow: hidden;
+  border-radius: 28px;
+  background: #fff;
+  border: 1px solid rgba(27, 27, 27, 0.08);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.popular-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 26px 60px rgba(27, 27, 27, 0.16);
+}
+
+.popular-img {
+  height: 185px;
+  background: #f3dfc3;
+}
+
+.popular-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.popular-body {
+  padding: 18px;
+}
+
+.popular-body > span {
+  display: inline-flex;
+  margin-bottom: 8px;
+  color: var(--red);
+  font-size: 0.76rem;
+  font-weight: 1000;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.popular-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.popular-body .btn {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 12px;
+}
+
+.menu-section {
+  padding-top: 28px;
+}
+
+.section-head h2,
+.category-title-row h2 {
+  color: var(--charcoal);
+}
+
+.menu-sticky-wrap {
+  border: 1px solid rgba(27, 27, 27, 0.10);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 16px 44px rgba(27, 27, 27, 0.10);
+}
+
+.deal-strip {
+  background: var(--charcoal);
+}
+
+.deal-strip-label {
+  background: var(--red);
+  color: #fff;
+}
+
+.deal-chip {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.deal-chip strong {
+  color: var(--mustard);
+}
+
+.tab-btn {
+  border: 1px solid rgba(27, 27, 27, 0.12);
+  color: var(--charcoal);
+  background: #fff;
+}
+
+.tab-btn.active {
+  background: var(--charcoal);
+  color: var(--mustard);
+  border-color: var(--charcoal);
+}
+
+.category-grid {
+  gap: 18px;
+}
+
+.menu-card {
+  border: 1px solid rgba(27, 27, 27, 0.08);
+  background: #fff;
+  box-shadow: 0 16px 36px rgba(27, 27, 27, 0.10);
+}
+
+.menu-img {
+  background: #f3dfc3;
+}
+
+.menu-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.badge {
+  background: var(--mustard);
+  color: var(--charcoal);
+}
+
+.menu-price {
+  color: var(--red);
+}
+
+.menu-actions {
+  gap: 10px;
+}
+
+.btn.ghost {
+  background: #fff;
+  border: 1px solid rgba(27, 27, 27, 0.12);
+  color: var(--charcoal);
+}
+
+.order-steps article {
+  background: #fff;
+  border: 1px solid rgba(27, 27, 27, 0.08);
+}
+
+.order-steps article i,
+.order-steps article svg {
+  color: var(--red);
+}
+
+.location-section {
+  background: var(--charcoal);
+  color: #fff;
+  border: 0;
+}
+
+.location-section p,
+.location-copy p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.location-section .script-kicker {
+  color: var(--mustard);
+}
+
+.site-footer {
+  background: #111;
+  color: #fff;
+}
+
+.site-footer p,
+.site-footer span,
+.site-footer a {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.cart-toggle {
+  background: var(--charcoal);
+  color: #fff;
+}
+
+.cart-toggle span {
+  background: var(--mustard);
+  color: var(--charcoal);
+}
+
+@media (max-width: 960px) {
+  .popular-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .top-bar-inner {
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 16px;
+    font-size: 0.82rem;
+  }
+
+  .top-bar-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-header {
+    top: 50px;
+    width: calc(100% - 18px);
+    min-height: 62px;
+  }
+
+  .nav-open .site-nav {
+    top: 72px;
+  }
+
+  .hero {
+    min-height: 640px;
+    padding-top: 158px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.45rem, 13vw, 4.2rem);
+  }
+
+  .hero-highlights {
+    gap: 8px;
+  }
+
+  .hero-highlights span {
+    padding: 9px 11px;
+    font-size: 0.82rem;
+  }
+
+  .popular-section {
+    margin-top: -42px;
+  }
+
+  .popular-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 14px;
+    padding: 2px 4px 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .popular-card {
+    min-width: 78%;
+    scroll-snap-align: start;
+  }
+
+  .popular-img {
+    height: 170px;
+  }
+
+  .menu-sticky-wrap {
+    top: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .popular-card {
+    min-width: 86%;
+  }
+
+  .popular-section,
+  .menu-section,
+  .order-steps,
+  .location-section,
+  .site-footer {
+    width: min(100% - 20px, 1180px);
+  }
+}

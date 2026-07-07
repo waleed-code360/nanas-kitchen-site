@@ -11,10 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <link rel="stylesheet" href="styles.css?v=13exact" />
+    <link rel="stylesheet" href="styles.css?v=14theme" />
   </head>
 
   <body>
+    <div class="top-bar" aria-label="Restaurant quick info">
+      <div class="top-bar-inner">
+        <span><i data-lucide="clock"></i> 1:00 PM - 3:00 AM</span>
+        <span><i class="fa-brands fa-whatsapp"></i> WhatsApp: 0321-6311367</span>
+        <span><i data-lucide="map-pin"></i> Valencia Town Lahore</span>
+      </div>
+    </div>
+
     <header class="site-header" id="top">
       <a class="brand" href="#home" aria-label="NANA'S KITCHEN home">
         <span class="brand-mark">N</span>
@@ -31,23 +39,30 @@
         <a href="#deals">Deals</a>
         <a href="#location">Location</a>
         <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#menu">Order Now</a>
       </nav>
     </header>
 
     <main>
       <section class="hero" id="home">
         <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1800&q=85">
-          <source src="assets/videos/hero-food.mp4?v=11" type="video/mp4" />
+          <source src="assets/videos/hero-food.mp4?v=14theme" type="video/mp4" />
         </video>
         <div class="hero-shade"></div>
 
         <div class="hero-inner">
           <div class="hero-copy">
             <p class="eyebrow">NANA'S KITCHEN • Fresh Fast Food</p>
-            <h1>Order burgers, pizzas, wraps & deals.</h1>
+            <h1>Fresh Fast Food in Valencia Town.</h1>
             <p class="hero-text">
-              Fresh burgers, wraps, sandwiches, fries, pizzas and value deals — simple menu, quick ordering, and home delivery.
+              Bold burgers, loaded pizzas, crispy fries, wraps and family deals — order quickly and send your cart directly on WhatsApp.
             </p>
+
+            <div class="hero-highlights">
+              <span><i data-lucide="flame"></i> Hot Deals</span>
+              <span><i data-lucide="pizza"></i> Pizza Combos</span>
+              <span><i data-lucide="bike"></i> Easy Delivery</span>
+            </div>
 
             <div class="hero-actions">
               <a class="btn primary" href="#menu">
@@ -63,11 +78,20 @@
         </div>
       </section>
 
+      <section class="popular-section" id="deals">
+        <div class="section-head compact">
+          <p class="script-kicker">Customer favourites</p>
+          <h2>Popular Deals</h2>
+          <p>Quick picks from Nana’s Kitchen — prices and product images are loaded from the same menu data.</p>
+        </div>
+        <div class="popular-grid" id="popularDeals"></div>
+      </section>
+
       <section class="menu-section" id="menu">
         <div class="section-head">
           <p class="script-kicker">Choose what you want</p>
           <h2>Full Menu</h2>
-          <p>Use the sticky category bar. As you scroll, the active category changes automatically.</p>
+          <p>Browse burgers, pizzas, wraps, fries, drinks and deals. Add items to cart and send your order on WhatsApp.</p>
         </div>
 
         <div class="menu-sticky-wrap">
@@ -191,7 +215,7 @@
       <a class="float-whatsapp" id="floatingWhatsApp" target="_blank" rel="noreferrer" aria-label="WhatsApp NANA'S KITCHEN"><i class="fa-brands fa-whatsapp"></i></a>
     </div>
 
-    <script src="menu.js?v=13exact"></script>
-    <script src="script.js?v=13exact"></script>
+    <script src="menu.js?v=14theme"></script>
+    <script src="script.js?v=14theme"></script>
   </body>
 </html>
