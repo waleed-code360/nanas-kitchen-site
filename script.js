@@ -53,9 +53,11 @@ function whatsappLink(message) {
 function setContactLinks() {
   const basicMessage = `${orderBaseMessage} Please share availability.`;
   const hero = document.querySelector("#heroWhatsApp");
+  const top = document.querySelector("#topWhatsApp");
   const floating = document.querySelector("#floatingWhatsApp");
   const footer = document.querySelector("#footerWhatsApp");
   if (hero) hero.href = whatsappLink(basicMessage);
+  if (top) top.href = whatsappLink(basicMessage);
   if (floating) floating.href = whatsappLink(basicMessage);
   if (footer) footer.href = whatsappLink(basicMessage);
 }
@@ -510,7 +512,7 @@ document.addEventListener("click", (event) => {
   if (tab) {
     const target = document.getElementById(tab.dataset.target);
     if (target) {
-      const stickyOffset = window.matchMedia("(max-width: 768px)").matches ? 116 : 120;
+      const stickyOffset = window.matchMedia("(max-width: 768px)").matches ? 205 : 190;
       const y = target.getBoundingClientRect().top + window.scrollY - stickyOffset;
       window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
     }
@@ -561,6 +563,7 @@ function initHeroVideo() {
 
 document.querySelector("#cartToggle")?.addEventListener("click", toggleCartOpen);
 document.querySelector("#cartClose")?.addEventListener("click", () => setCartOpen(false));
+document.querySelector("#cartBackdrop")?.addEventListener("click", () => setCartOpen(false));
 document.querySelector("#sendOrder")?.addEventListener("click", sendCartOrder);
 
 setContactLinks();

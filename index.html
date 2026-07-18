@@ -2,134 +2,214 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Nana's Kitchen Valencia Town Lahore - burgers, wraps, sandwiches, fries, pizzas, signature pizzas and best deals." />
-    <title>NANA'S KITCHEN | Order Now</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#111827" />
+    <meta name="description" content="Nana's Kitchen Valencia Town Lahore — burgers, pizzas, wraps, fries, drinks and family deals." />
+    <title>Nana's Kitchen | Fast Food in Valencia Town</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-    <link rel="stylesheet" href="styles.css?v=18mobile" />
+    <link rel="stylesheet" href="styles.css?v=19sarab" />
   </head>
 
   <body>
-    <div class="top-bar" aria-label="Restaurant quick info">
-      <div class="top-bar-inner">
-        <span><i data-lucide="clock"></i> 1:00 PM - 3:00 AM</span>
-        <span><i class="fa-brands fa-whatsapp"></i> WhatsApp: 0321-6311367</span>
-        <span><i data-lucide="map-pin"></i> Nana's Kitchen, Valencia Town Lahore</span>
+    <div class="announcement-bar">
+      <div class="shell announcement-inner">
+        <div class="announcement-contact">
+          <a href="tel:03216311367"><i data-lucide="phone"></i><span>0321-6311367</span></a>
+          <a id="topWhatsApp" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp Order</span></a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Nana%27s%20Kitchen" target="_blank" rel="noreferrer"><i data-lucide="map-pin"></i><span>Nana's Kitchen, Valencia Town</span></a>
+        </div>
+        <div class="announcement-offer"><i data-lucide="bike"></i> Open daily 1:00 PM – 3:00 AM</div>
       </div>
     </div>
 
     <header class="site-header" id="top">
-      <a class="brand" href="#home" aria-label="NANA'S KITCHEN home">
-        <span class="brand-mark">N</span>
-        <span>NANA'S KITCHEN</span>
-      </a>
+      <div class="shell header-inner">
+        <a class="brand" href="#home" aria-label="Nana's Kitchen home">
+          <span class="brand-symbol"><span>N</span></span>
+          <span class="brand-copy"><strong>Nana's Kitchen</strong><small>Fast Food & Restaurant</small></span>
+        </a>
 
-      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
-        <i data-lucide="menu"></i>
-      </button>
+        <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+          <i data-lucide="menu"></i>
+        </button>
 
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#home">Home</a>
-        <a href="#menu">Menu</a>
-        <a href="#deals">Deals</a>
-        <a href="#location">Location</a>
-        <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#menu">Order Now</a>
-      </nav>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#home">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="#menu">Menu</a>
+          <a href="#order">How to Order</a>
+          <a href="#location">Location</a>
+          <a class="nav-cta" href="#menu"><i data-lucide="shopping-bag"></i> Order Now</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="hero" id="home">
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=1800&q=85">
-          <source src="assets/videos/hero-food.mp4?v=17clean" type="video/mp4" />
-        </video>
-        <div class="hero-shade"></div>
+      <section class="craving-panel" aria-label="Quick menu categories">
+        <div class="shell craving-inner">
+          <div class="craving-title">
+            <span class="mini-label">Quick order</span>
+            <h2>What are you craving today?</h2>
+          </div>
+          <div class="craving-categories">
+            <button type="button" data-category="Best Deals" data-target="menu-best-deals">
+              <img src="assets/images/menu/deal-2.jpeg" alt="Best Deals" />
+              <span>Deals</span>
+            </button>
+            <button type="button" data-category="Burgers" data-target="menu-burgers">
+              <img src="assets/images/menu/zinger-burger.jpeg" alt="Burgers" />
+              <span>Burgers</span>
+            </button>
+            <button type="button" data-category="Pizza Flavours" data-target="menu-pizza-flavours">
+              <img src="assets/images/menu/chicken-tikka-+-cold-drink.jpeg" alt="Pizzas" />
+              <span>Pizzas</span>
+            </button>
+            <button type="button" data-category="Wraps" data-target="menu-wraps">
+              <img src="assets/images/menu/nanas-wrap.jpg" alt="Wraps" />
+              <span>Wraps</span>
+            </button>
+            <button type="button" data-category="Fries" data-target="menu-fries">
+              <img src="assets/images/menu/loaded-fries.jpeg" alt="Fries" />
+              <span>Fries</span>
+            </button>
+            <button type="button" data-category="Our Special" data-target="menu-our-special">
+              <img src="assets/images/menu/pasta.jpg" alt="Specials" />
+              <span>Specials</span>
+            </button>
+          </div>
+        </div>
+      </section>
 
-        <div class="hero-inner">
+      <section class="hero" id="home">
+        <div class="shell hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Fresh Fast Food • Valencia Town Lahore</p>
-            <h1>Nana's Kitchen</h1>
-            <p class="hero-text hero-promo">
-              Fresh burgers, loaded pizzas, cheesy wraps and family deals — hot, tasty and ready for quick delivery.
-            </p>
+            <span class="hero-kicker"><i data-lucide="flame"></i> Fresh food, bold flavour</span>
+            <h1>Delicious fast food for every craving.</h1>
+            <p>From crispy burgers and loaded pizzas to shawarmas, fries and family deals — Nana's Kitchen prepares every order fresh in Valencia Town, Lahore.</p>
 
             <div class="hero-actions">
-              <a class="btn primary" href="#menu">
-                <i class="fa-solid fa-utensils"></i>
-                Explore Menu
-              </a>
-              <a class="btn whatsapp" id="heroWhatsApp" target="_blank" rel="noreferrer">
-                <i class="fa-brands fa-whatsapp"></i>
-                Order on WhatsApp
-              </a>
+              <a class="button button-primary" href="#menu"><i data-lucide="utensils"></i> Explore Menu</a>
+              <a class="button button-dark" id="heroWhatsApp" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a>
+            </div>
+
+            <div class="hero-trust">
+              <div><span class="trust-icon"><i data-lucide="clock-3"></i></span><p><strong>Open till 3 AM</strong><small>Fresh late-night food</small></p></div>
+              <div><span class="trust-icon"><i data-lucide="badge-check"></i></span><p><strong>Exact menu prices</strong><small>No hidden changes</small></p></div>
+              <div><span class="trust-icon"><i data-lucide="message-circle"></i></span><p><strong>Easy ordering</strong><small>Cart to WhatsApp</small></p></div>
             </div>
           </div>
-        </div>
-      </section>
 
-      <section class="menu-section" id="menu">
-        <div class="section-head">
-          <p class="script-kicker">Choose what you want</p>
-          <h2>Full Menu</h2>
-          <p>Browse burgers, pizzas, wraps, fries, drinks and deals. Add items to cart and send your order on WhatsApp.</p>
-        </div>
-
-        <div class="menu-sticky-wrap">
-          <div class="deal-strip" id="dealStrip" aria-label="Best deals quick strip"></div>
-          <div class="mobile-current-category" id="mobileCurrentCategory" aria-live="polite">
-            <span>Browsing now</span>
-            <strong>Best Deals</strong>
+          <div class="hero-visual" aria-label="Nana's Kitchen food showcase">
+            <div class="hero-media">
+              <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/images/menu/deal-2.jpeg">
+                <source src="assets/videos/hero-food.mp4?v=19sarab" type="video/mp4" />
+              </video>
+            </div>
+            <div class="floating-card floating-deal"><span>Hot Deal</span><strong>Best Deals</strong><small>Starting from PKR 550</small></div>
+            <div class="floating-card floating-rating"><span class="stars">★★★★★</span><strong>Fresh & tasty</strong><small>Made for every craving</small></div>
+            <div class="hero-stamp"><span>Fresh</span><strong>FOOD</strong><small>EVERY DAY</small></div>
           </div>
-          <div class="menu-tabs" id="menuTabs" aria-label="Menu categories"></div>
-        </div>
-
-        <div class="menu-sections" id="menuGrid" aria-live="polite"></div>
-      </section>
-
-      <section class="order-steps" id="order">
-        <div class="section-head compact">
-          <p class="script-kicker">Simple ordering</p>
-          <h2>How to Order</h2>
-        </div>
-        <div class="steps-grid">
-          <article class="step-card">
-            <span class="step-number">01</span>
-            <i data-lucide="utensils-crossed"></i>
-            <h3>Browse Your Food</h3>
-            <p>Open any category and choose burgers, pizzas, wraps, deals or drinks.</p>
-          </article>
-          <article class="step-card">
-            <span class="step-number">02</span>
-            <i data-lucide="shopping-cart"></i>
-            <h3>Add Your Order</h3>
-            <p>Add items to cart easily. For pizzas, choose the size that suits you best.</p>
-          </article>
-          <article class="step-card">
-            <span class="step-number">03</span>
-            <i class="fa-brands fa-whatsapp"></i>
-            <h3>Send on WhatsApp</h3>
-            <p>Your complete order is prepared automatically and sent in one clean WhatsApp message.</p>
-          </article>
         </div>
       </section>
 
-      <section class="location-section" id="location">
-        <div class="location-copy">
-          <p class="script-kicker">Find us</p>
-          <h2>Nana's Kitchen</h2>
-          <p>Sunrise Rd, Block H1 Block K 1, Valencia, Lahore, Pakistan</p>
-          <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=Nana%27s%20Kitchen" target="_blank" rel="noreferrer">
-            <i data-lucide="map-pin"></i>
-            Get Directions
-          </a>
+      <section class="food-ticker" aria-label="Menu highlights">
+        <div class="ticker-track">
+          <span>Gourmet Burgers</span><i></i><span>Loaded Pizzas</span><i></i><span>Fresh Wraps</span><i></i><span>Crispy Fries</span><i></i><span>Family Deals</span><i></i><span>Cold Drinks</span><i></i>
+          <span>Gourmet Burgers</span><i></i><span>Loaded Pizzas</span><i></i><span>Fresh Wraps</span><i></i><span>Crispy Fries</span><i></i><span>Family Deals</span><i></i><span>Cold Drinks</span><i></i>
         </div>
-        <div class="map-frame">
-          <iframe title="NANA'S KITCHEN location map" src="https://www.google.com/maps?q=Nana%27s%20Kitchen&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </section>
+
+      <section class="category-showcase section" id="categories">
+        <div class="shell">
+          <div class="section-heading split-heading">
+            <div><span class="eyebrow">What we offer</span><h2>Browse by category</h2></div>
+            <p>Choose a category and jump directly to the exact Nana's Kitchen menu, with all existing item names, images and prices preserved.</p>
+          </div>
+
+          <div class="category-showcase-grid">
+            <button class="category-feature category-large" type="button" data-category="Burgers" data-target="menu-burgers">
+              <img src="assets/images/menu/zinger-burger.jpeg" alt="Burger category" />
+              <span class="category-overlay"><small>11 items</small><strong>Burgers</strong><em>Explore <i data-lucide="arrow-up-right"></i></em></span>
+            </button>
+            <button class="category-feature" type="button" data-category="Pizza Flavours" data-target="menu-pizza-flavours">
+              <img src="assets/images/menu/chicken-tikka-+-cold-drink.jpeg" alt="Pizza category" />
+              <span class="category-overlay"><small>Pizza menu</small><strong>Pizzas</strong><em>Explore <i data-lucide="arrow-up-right"></i></em></span>
+            </button>
+            <button class="category-feature" type="button" data-category="Wraps" data-target="menu-wraps">
+              <img src="assets/images/menu/nanas-wrap.jpg" alt="Wrap category" />
+              <span class="category-overlay"><small>Freshly wrapped</small><strong>Wraps</strong><em>Explore <i data-lucide="arrow-up-right"></i></em></span>
+            </button>
+            <button class="category-feature" type="button" data-category="Best Deals" data-target="menu-best-deals">
+              <img src="assets/images/menu/deal-6.jpeg" alt="Deals category" />
+              <span class="category-overlay"><small>Value combos</small><strong>Best Deals</strong><em>Explore <i data-lucide="arrow-up-right"></i></em></span>
+            </button>
+            <button class="category-feature" type="button" data-category="Fries" data-target="menu-fries">
+              <img src="assets/images/menu/loaded-fries.jpeg" alt="Fries category" />
+              <span class="category-overlay"><small>Golden & crispy</small><strong>Fries</strong><em>Explore <i data-lucide="arrow-up-right"></i></em></span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="menu-section section" id="menu">
+        <div class="shell">
+          <div class="section-heading centered-heading">
+            <span class="eyebrow">What's cooking</span>
+            <h2>Our delicious menu</h2>
+            <p>Tap any card to view details, choose pizza sizes, add items to your cart and send the complete order on WhatsApp.</p>
+          </div>
+
+          <div class="menu-toolbar">
+            <div class="deal-strip" id="dealStrip" aria-label="Best deals quick strip"></div>
+            <div class="mobile-current-category" id="mobileCurrentCategory" aria-live="polite"><span>Browsing now</span><strong>Best Deals</strong></div>
+            <div class="menu-tabs" id="menuTabs" aria-label="Menu categories"></div>
+          </div>
+
+          <div class="menu-sections" id="menuGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="offer-section section">
+        <div class="shell offer-card">
+          <div class="offer-copy">
+            <span class="eyebrow light">Family favourite</span>
+            <h2>Big hunger? Pick a complete family deal.</h2>
+            <p>Choose from Nana's Kitchen deals with burgers, shawarmas, pizzas, fries and drinks — all using the same menu pricing already approved.</p>
+            <button class="button button-light" type="button" data-open-detail="deal-14"><i data-lucide="badge-percent"></i> View Deal 14</button>
+          </div>
+          <div class="offer-image"><img src="assets/images/menu/deal-14.jpeg" alt="Nana's Kitchen family deal" /><span><small>Deal 14</small><strong>PKR 4,300</strong></span></div>
+        </div>
+      </section>
+
+      <section class="order-steps section" id="order">
+        <div class="shell">
+          <div class="section-heading centered-heading"><span class="eyebrow">Simple ordering</span><h2>Order in three easy steps</h2></div>
+          <div class="steps-grid">
+            <article><span>01</span><i data-lucide="search"></i><h3>Browse the menu</h3><p>Choose burgers, pizzas, wraps, fries, drinks or one of our complete deals.</p></article>
+            <article><span>02</span><i data-lucide="shopping-basket"></i><h3>Add to your cart</h3><p>Tap Add, choose pizza size where required, then adjust item quantities easily.</p></article>
+            <article><span>03</span><i class="fa-brands fa-whatsapp"></i><h3>Send on WhatsApp</h3><p>Enter your delivery address and send one clean order message directly to Nana's Kitchen.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="location-section section" id="location">
+        <div class="shell location-grid">
+          <div class="location-copy">
+            <span class="eyebrow">Find us</span>
+            <h2>Visit Nana's Kitchen in Valencia Town.</h2>
+            <p>Sunrise Rd, Block H1 Block K 1, Valencia, Lahore, Pakistan</p>
+            <div class="location-details">
+              <div><i data-lucide="clock-3"></i><span><strong>Opening hours</strong><small>1:00 PM – 3:00 AM</small></span></div>
+              <div><i data-lucide="phone"></i><span><strong>Call us</strong><small>0321-6311367 · 0323-4407289</small></span></div>
+            </div>
+            <a class="button button-primary" href="https://www.google.com/maps/search/?api=1&query=Nana%27s%20Kitchen" target="_blank" rel="noreferrer"><i data-lucide="navigation"></i> Get Directions</a>
+          </div>
+          <div class="map-frame"><iframe title="Nana's Kitchen location map" src="https://www.google.com/maps?q=Nana%27s%20Kitchen&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
         </div>
       </section>
     </main>
@@ -137,73 +217,33 @@
     <aside class="floating-deals" id="floatingDeals" aria-label="Floating best deals"></aside>
 
     <aside class="cart-panel" id="cartPanel" aria-label="Order cart">
-      <button class="cart-toggle" id="cartToggle" aria-label="Open order cart">
-        <i data-lucide="shopping-cart"></i>
-        <span id="cartCount">0</span>
-      </button>
+      <button class="cart-toggle" id="cartToggle" type="button" aria-label="Open order cart"><i data-lucide="shopping-bag"></i><span id="cartCount">0</span></button>
+      <div class="cart-backdrop" id="cartBackdrop"></div>
       <div class="cart-drawer" id="cartDrawer">
-        <div class="cart-head">
-          <h2>Your Order</h2>
-          <button id="cartClose" aria-label="Close cart">
-            <i data-lucide="x"></i>
-          </button>
-        </div>
+        <div class="cart-head"><div><span>Your basket</span><h2>Your Order</h2></div><button id="cartClose" type="button" aria-label="Close cart"><i data-lucide="x"></i></button></div>
         <div class="cart-items" id="cartItems"></div>
-        <div class="cart-total">
-          <span>Total</span>
-          <strong id="cartTotal">PKR 0</strong>
-        </div>
-
-        <div class="customer-field">
-          <label for="customerAddress">Delivery address</label>
-          <textarea id="customerAddress" rows="3" placeholder="Type customer's delivery address here"></textarea>
-        </div>
-
-        <button class="btn whatsapp full" id="sendOrder">
-          <i class="fa-brands fa-whatsapp"></i>
-          Send Order on WhatsApp
-        </button>
+        <div class="cart-summary"><div class="cart-total"><span>Total</span><strong id="cartTotal">PKR 0</strong></div><div class="customer-field"><label for="customerAddress">Delivery address</label><textarea id="customerAddress" rows="3" placeholder="Type customer's delivery address here"></textarea></div><button class="button whatsapp-button full" id="sendOrder" type="button"><i class="fa-brands fa-whatsapp"></i> Send Order on WhatsApp</button></div>
       </div>
     </aside>
 
-
     <div class="item-modal" id="itemModal" hidden aria-hidden="true">
       <div class="item-modal-backdrop" data-close-modal></div>
-      <div class="item-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalItemName">
-        <button class="modal-close" type="button" data-close-modal aria-label="Close item details">
-          <i data-lucide="x"></i>
-        </button>
-        <div id="modalContent"></div>
-      </div>
+      <div class="item-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalItemName"><button class="modal-close" type="button" data-close-modal aria-label="Close item details"><i data-lucide="x"></i></button><div id="modalContent"></div></div>
     </div>
 
     <footer class="site-footer" id="contact">
-      <div>
-        <a class="brand footer-brand" href="#home">
-          <span class="brand-mark">N</span>
-          <span>NANA'S KITCHEN</span>
-        </a>
-        <p>Burgers, wraps, sandwiches, fries, pizzas, specials and best deals in Valencia Town Lahore.</p>
+      <div class="shell footer-grid">
+        <div class="footer-about"><a class="brand footer-brand" href="#home"><span class="brand-symbol"><span>N</span></span><span class="brand-copy"><strong>Nana's Kitchen</strong><small>Fast Food & Restaurant</small></span></a><p>Fresh burgers, pizzas, wraps, fries, special items and family deals in Valencia Town, Lahore.</p></div>
+        <div class="footer-list"><h2>Quick links</h2><a href="#home">Home</a><a href="#categories">Categories</a><a href="#menu">Full Menu</a><a href="#location">Location</a></div>
+        <div class="footer-list"><h2>Contact</h2><a id="footerWhatsApp" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> 0321-6311367</a><a href="tel:03216311367"><i data-lucide="phone"></i> 0321-6311367</a><a href="tel:03234407289"><i data-lucide="phone"></i> 0323-4407289</a></div>
+        <div class="footer-list"><h2>Visit us</h2><span><i data-lucide="map-pin"></i> Sunrise Rd, Block H1 Block K 1, Valencia, Lahore</span><span><i data-lucide="clock-3"></i> 1:00 PM – 3:00 AM</span></div>
       </div>
-      <div class="footer-list">
-        <h2>Contact</h2>
-        <a id="footerWhatsApp" target="_blank" rel="noreferrer"><i class="fa-brands fa-whatsapp"></i> WhatsApp: 0321-6311367</a>
-        <a href="tel:03216311367"><i data-lucide="phone"></i> Call: 0321-6311367</a>
-        <a href="tel:03234407289"><i data-lucide="phone"></i> Call: 0323-4407289</a>
-      </div>
-      <div class="footer-list">
-        <h2>Timing & Address</h2>
-        <span><i data-lucide="clock"></i> 1:00 PM - 3:00 AM</span>
-        <span><i data-lucide="map-pin"></i> Sunrise Rd, Block H1 Block K 1, Valencia, Lahore, Pakistan</span>
-      </div>
+      <div class="shell footer-bottom"><span>© 2026 Nana's Kitchen. All rights reserved.</span><a href="#top">Back to top <i data-lucide="arrow-up"></i></a></div>
     </footer>
 
-    <div class="floating-actions" aria-label="Quick contact">
-      <a class="float-call" href="tel:03216311367" aria-label="Call NANA'S KITCHEN"><i data-lucide="phone"></i></a>
-      <a class="float-whatsapp" id="floatingWhatsApp" target="_blank" rel="noreferrer" aria-label="WhatsApp NANA'S KITCHEN"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
+    <div class="floating-actions" aria-label="Quick contact"><a class="float-call" href="tel:03216311367" aria-label="Call Nana's Kitchen"><i data-lucide="phone"></i></a><a class="float-whatsapp" id="floatingWhatsApp" target="_blank" rel="noreferrer" aria-label="WhatsApp Nana's Kitchen"><i class="fa-brands fa-whatsapp"></i></a></div>
 
-    <script src="menu.js?v=18mobile"></script>
-    <script src="script.js?v=18mobile"></script>
+    <script src="menu.js?v=19sarab"></script>
+    <script src="script.js?v=19sarab"></script>
   </body>
 </html>
